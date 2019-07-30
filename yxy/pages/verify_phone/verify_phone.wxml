@@ -1,0 +1,24 @@
+<!--pages/verify_phone/verify_phone.wxml-->
+<view class="v-logo">
+  <image src="../../images/2.jpg" mode='aspectFill' />
+</view>
+<view class="v-intro">我是店铺简介描述我是店铺简介描述我是店铺简介描述我是店铺简介描述我是店铺简介描...</view>
+<view class="v-input">
+  <view class='irow'>
+    <view class="dtit">手机号码</view>
+    <input type="number" placeholder="请输入手机号" class="txt" />
+  </view>
+  <view class='irow'>
+    <view class="dtit">验证码</view>
+    <input type="number" placeholder="请输入验证码" class="txt" />
+    <button class="btcode {{codebg==true?'btcodeOn':''}}" bindtap='bindCode'>获取验证码</button>
+  </view>
+  <view class="irow last">
+    <button class="btsubmit {{codebg==true?'active':''}}">提交</button>
+  </view>
+  <view class="irow last">
+    <view class="aback">返回上级></view>
+  </view>
+</view>
+
+<view class="hint" wx:if="{{hint}}"><icon type="success" size="17"/><text>已发送短信，请注意查收！</text></view>

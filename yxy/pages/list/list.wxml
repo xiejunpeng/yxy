@@ -1,0 +1,73 @@
+<!--pages/list/list.wxml-->
+<view class="boxSearch">
+  <view class="bsShow" wx:if="{{!showSearch}}" bindtap='bindSearch'>
+    <image src="../../images/ico1.png" mode='widthFix' class="ico" />
+    <view>搜索目的地/产品名称</view>
+  </view>
+  <view class="bsHide" wx:if="{{showSearch}}">
+    <input placeholder="搜索目的地/产品名称" class="txt-search" />
+    <image src="../../images/ico1.png" mode='widthFix' class="ico" />
+    <button class="btSearch">搜索</button>
+  </view>
+</view>
+<view class='boxTab'>
+  <view class="tabTxt{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text>
+    <text class='arrow'></text>
+  </view>
+</view>
+
+<!--排序-->
+<view class="tabLayer" hidden="{{tab[0]}}">
+  <text class="{{paixu_id==0?'active':''}}" data-id="0" data-index="0" data-txt="推荐排序" bindtap="filter">推荐排序</text>
+  <text class="{{paixu_id==item.id?'active':''}}" wx:for="{{paixuList}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="0" data-txt="{{item.title}}" bindtap="filter">{{item.title}}</text>
+</view>
+
+<!--销量-->
+<view class="tabLayer" hidden="{{tab[1]}}">
+  <text class="{{xiaoliang_id==0?'active':''}}" data-id="0" data-index="1" data-txt="销量" bindtap="filter">销量</text>
+</view>
+
+<view class="boxList">
+  <view class='list' bindtap="onRouteDetails">
+    <view class="pic">
+      <image src="../../images/11.jpg" mode='widthFix' />
+    </view>
+    <view class="ct">
+      <view class="price">￥
+        <text class="s1">530</text>
+        <text class="s2">起</text>
+      </view>
+      <view class="lb">
+        <text>特惠</text>
+      </view>
+    </view>
+    <view class="tit">大理丽江香格里拉普达措虎跳峡1日经典游即日来回感受大自然魅力</view>
+  </view>
+  <view class='list'>
+    <view class="pic">
+      <image src="../../images/11.jpg" mode='widthFix' />
+    </view>
+    <view class="ct">
+      <view class="price">￥
+        <text class="s1">530</text>
+        <text class="s2">起</text>
+      </view>
+      <view class="lb">
+        <text>特惠</text>
+        <text>特惠</text>
+      </view>
+    </view>
+    <view class="tit">大理丽江香格里拉普达措虎跳峡1日经典游即日来回感受大自然魅力</view>
+  </view>
+</view>
+<view class='btTop' bindtap='goTop'>
+  <image src="../../images/ico_top.png" mode='widthFix' />
+</view>
+<view class="none">
+  <text class='line'></text>
+  <text class='txt'>没有了</text>
+  <view class="footer">
+    <image src="../images/footer.png"></image>
+  </view>
+</view>

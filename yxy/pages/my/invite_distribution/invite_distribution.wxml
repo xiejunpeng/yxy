@@ -1,0 +1,13 @@
+<!--pages/my/invite_distribution/invite_distribution.wxml-->
+<view class="inviteHint">长按保存图片到手机或转发给朋友</view>
+<view class="invitePic">
+  <image src="../../../images/16.jpg" mode='widthFix' />
+</view>
+
+<view class="inviteTit">
+  <text class='line'></text>
+  <text class='txt'>分享赚钱规则</text>
+</view>
+<view class="inviteHint2">
+  <image src="../../../images/hint.png" mode='widthFix' />
+</view>

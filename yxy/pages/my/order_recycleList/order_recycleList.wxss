@@ -1,0 +1,186 @@
+/* pages/my/order_recycleList/order_recycleList.wxss */
+page {
+  background-color: #fafafa;
+  padding-bottom: 30rpx;
+}
+
+.orderNav {
+  position: fixed;
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: solid 1rpx #e6e6e6;
+  top: 0;
+  z-index: 2;
+}
+
+.orderNav .nav {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 72rpx;
+  font-size: 34rpx;
+  line-height: 72rpx;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+}
+
+.orderNav .navon text {
+  display: inline-block;
+  border-bottom: solid 5rpx #06b2b6;
+  line-height: 72rpx;
+  color: #06b2b6;
+  padding: 0 8rpx;
+}
+
+/*订单列表*/
+
+.orderList {
+  margin-top: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.orderList .list {
+  background-color: #fff;
+  padding: 35rpx 0 55rpx 0;
+  margin-bottom: 15rpx;
+  overflow: hidden;
+}
+
+.orderList .ct {
+  position: relative;
+  color: #333;
+  background-color: #fafafa;
+  padding: 30rpx 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.orderList .ct image {
+  float: left;
+  display: block;
+  width: 150rpx;
+}
+
+.orderList .ct .txt {
+  float: left;
+  width: 390rpx;
+  padding: 0 0 0 15rpx;
+  box-sizing: border-box;
+}
+
+.orderList .ct .tit {
+  font-size: 30rpx;
+  line-height: 38rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6rpx;
+}
+
+.orderList .ct .type {
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #b2b2b2;
+}
+
+.orderList .ct .price {
+  float: right;
+  width: 150rpx;
+  overflow: hidden;
+}
+
+.orderList .ct .price text {
+  display: block;
+  font-size: 30rpx;
+  text-align: right;
+  word-break: break-all;
+}
+
+.orderList .ct .price .p2 {
+  color: #b2b2b2;
+  font-size: 28rpx;
+}
+
+.orderList .total, .orderList .status {
+  text-align: right;
+}
+
+.orderList .total {
+  color: #b2b2b2;
+  font-size: 28rpx;
+  padding: 25rpx 25rpx 0 25rpx;
+}
+
+.orderList .total text {
+  font-size: 38rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+
+.orderList .status {
+  font-size: 32rpx;
+  color: #666;
+  padding: 12rpx 25rpx 0 25rpx;
+}
+
+.orderList .bm {
+  padding: 30rpx 25rpx 0 25rpx;
+}
+
+.orderList .bm text {
+  display: block;
+  float: right;
+  width: 150rpx;
+  height: 58rpx;
+  font-size: 30rpx;
+  line-height: 58rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  padding: rpx 0;
+  margin-left: 20rpx;
+}
+
+.orderList .bm .bt1 {
+  background-color: #fff;
+  color: #666;
+  border: solid 1rpx #666;
+}
+
+.orderList .bm .bt2 {
+  background-color: #06b2b6;
+  color: #fff;
+  border: solid 1rpx #06b2b6;
+}
+
+/*订单列表 end*/
+
+.none {
+  position: relative;
+  text-align: center;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+.none .line {
+  position: absolute;
+  display: block;
+  width: 90%;
+  top: 24rpx;
+  left: 5%;
+  border-bottom: solid 1rpx #eee;
+  z-index: 1;
+}
+
+.none .txt {
+  background-color: #fafafa;
+  position: relative;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #e5e5e5;
+  padding: 0 35rpx;
+  z-index: 2;
+}

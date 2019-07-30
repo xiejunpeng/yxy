@@ -1,0 +1,32 @@
+/* pages/my/agent/agent.wxss */
+page{
+  background-color: #aae6fc;
+}
+.bgagent{ position: relative; padding-bottom: 220rpx; overflow: hidden;}
+.bgimage{
+  position: absolute; width:100%;  bottom: 120rpx; left: 0; 
+}
+.bgimage image{
+  display: block;
+  width: 100%;
+}
+.agent{ position:relative; background-color:#fff; border-radius:10rpx; padding:75rpx 30rpx; margin:130rpx 50rpx 0 50rpx;}
+.agent .head{ position:absolute; display:table-cell; vertical-align:middle; width:120rpx; height:120rpx; text-align:center; background-color:#fff; border:solid 1rpx #FFF; top:-60rpx; left:50%; margin-left:-60rpx; z-index:1;}
+.agent .head, .agent .head image{ border-radius:50%;}
+.agent .head image{ width: 100%; height:100%;}
+
+.agent .tit{ font-size:30rpx; text-align:center; color:#808080; margin-bottom:8rpx;}
+.agent .tit text{ font-size:36rpx; color:#333333; margin:0 5rpx;}
+.agent .ct{ color:#666; border-top:solid 1rpx #e6e6e6; margin-top:60rpx; overflow:hidden;}
+.agent .ct .picTit{ display:block; width:375rpx; margin:40rpx auto 0 auto;}
+.agent .ct .list{ margin:60rpx 0 0 0;}
+.agent .ct .lico{ float:left; width:50%; text-align:center;}
+.agent .ct .lico image{ width:115rpx;}
+.agent .ct .lico view, .agent .ct .txt view{ font-size:32rpx;  margin-top:15rpx;}
+.agent .ct .lico .p2, .agent .ct .txt .p2{ font-size:28rpx; line-height:36rpx; color:#b2b2b2;}
+.agent .ct .lico .p2 text, .agent .ct .txt .p2 text{ display: block;}
+.agent .ct .pic2{ display:block; width:350rpx; margin: 0 auto;}
+.agent .ct .txt{ text-align:center; }
+
+.agentBm{ position: fixed; width:100%; height:120rpx; background-color:#fff; border-top:solid 1rpx #e8e8e8; bottom:0; left: 0; box-sizing:border-box; padding:0 35rpx; }
+.agentBm navigator{ display:block; width:100%; height:80rpx; font-size: 32rpx; text-align:center; line-height:80rpx; color:#fff; border-radius:80rpx; background-color:#06b2b6; margin-top:20rpx;}

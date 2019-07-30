@@ -1,0 +1,33 @@
+/* pages/my/invite_distribution/invite_distribution.wxss */
+.inviteHint{ color:#808080; font-size:30rpx; text-align:center; margin-top:30rpx;}
+.invitePic{ padding:25rpx 55rpx 0 55rpx;}
+.invitePic image, .inviteHint2 image{ display:block; width:100%;}
+
+.inviteTit {
+  position: relative;
+  text-align: center;
+  margin: 75rpx 35rpx;
+  overflow: hidden;
+}
+
+.inviteTit .line {
+  position: absolute;
+  display: block;
+  width: 90%;
+  top: 24rpx;
+  left: 5%;
+  border-bottom: solid 1rpx #e0e0e0;
+  z-index: 1;
+}
+
+.inviteTit .txt {
+  background-color: #fff;
+  position: relative;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #333333;
+  padding: 0 35rpx;
+  z-index: 2;
+}
+
+.inviteHint2{margin:0 70rpx 40px 70rpx;}

@@ -1,0 +1,123 @@
+<!--pages/my/order_list/order_list.wxml-->
+<view class="orderNav">
+  <view class="nav {{navData == 0 ? 'navon' : ''}}">
+    <text data-nav="0" bindtap='binNav'>全部</text>
+  </view>
+  <view class="nav {{navData == 1 ? 'navon' : ''}}">
+    <text data-nav="1" bindtap='binNav'>旅游线路</text>
+  </view>
+  <view class="nav {{navData == 2 ? 'navon' : ''}}">
+    <text data-nav="2" bindtap='binNav'>酒店客栈</text>
+  </view>
+  <view class="nav {{navData == 3 ? 'navon' : ''}}">
+    <text data-nav="3" bindtap='binNav'>景点门票</text>
+  </view>
+</view>
+
+<view class="orderTab">
+  <view class="tab {{tabData == 0 ? 'tabon' : ''}}" data-tab="0" bindtap='binTab'>全部</view>
+  <view class="tab {{tabData == 1 ? 'tabon' : ''}}" data-tab="1" bindtap='binTab'>待付款</view>
+  <view class="tab {{tabData == 2 ? 'tabon' : ''}}" data-tab="2" bindtap='binTab'>待消费</view>
+  <view class="tab {{tabData == 3 ? 'tabon' : ''}}" data-tab="3" bindtap='binTab'>待评论</view>
+  <view class="tab {{tabData == 4 ? 'tabon' : ''}}" data-tab="4" bindtap='binTab'>已完成</view>
+  <view class="rdow" bindtap='bindRecycle'>
+    <text class='arrow'></text>
+  </view>
+  <navigator url='../order_recycleList/order_recycleList' class="recycle" wx:if="{{showRecycle}}">
+    <image src="../../../images/ico14.png" mode='widthFix' />
+    <text>回收站</text>
+  </navigator>
+</view>
+
+<view class="orderList">
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">待付款</view>
+      <view class="bm">
+        <navigator url='../order_details_unpaid/order_details_unpaid' class="bt2">去付款</navigator>
+        <navigator url='../order_details_cancel/order_details_cancel' class="bt1">取消订单</navigator>
+      </view>
+  </view>
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">待消费</view>
+      <view class="bm">
+        <navigator url='../order_details_consumption/order_details_consumption' class="bt2">去消费</navigator>
+      </view>
+  </view>
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">待评论</view>
+      <view class="bm">
+        <navigator url='../order_details_comment/order_details_comment' class="bt2">去评论</navigator>
+      </view>
+  </view>
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">已完成</view>
+      <view class="bm">
+        <navigator url='../order_details_accomplish/order_details_accomplish' class="bt2">查看订单</navigator>
+      </view>
+  </view>
+</view>
+
+<view class="none">
+  <text class='line'></text>
+  <text class='txt'>没有了</text>
+</view>

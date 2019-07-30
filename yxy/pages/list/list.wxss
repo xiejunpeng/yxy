@@ -1,0 +1,301 @@
+/* pages/list/list.wxss */
+
+page {
+  background-color: #fafafa;
+}
+
+.boxSearch {
+  position: fixed;
+  width: 100%;
+  background-color: #fcaa3a;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 3;
+  top: 0;
+}
+
+.boxSearch .bsShow {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.boxSearch .bsShow, .boxSearch .txt-search {
+  width: 100%;
+  height: 56rpx;
+  font-size: 22rpx;
+  line-height: 56rpx;
+  border-radius: 35rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0 20rpx 0 82rpx;
+}
+
+.boxSearch .bsHide {
+  display: block;
+  padding-right: 80rpx;
+}
+
+.boxSearch .ico {
+  position: absolute;
+  width: 35rpx;
+  top: 32rpx;
+  left: 50rpx;
+}
+
+.boxSearch .btSearch {
+  position: absolute;
+  height: 56rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 56rpx;
+  text-align: right;
+  right: 30rpx;
+  top: 21rpx;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+}
+
+.boxSearch .btSearch::after {
+  border: none;
+}
+
+.boxTab {
+  position: fixed;
+  width: 100%;
+  height: 80rpx;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 96rpx;
+  z-index: 3;
+}
+
+.tabTxt {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 40rpx;
+  margin: 10rpx 0;
+  box-sizing: border-box;
+  border-right: solid 1rpx #f2f2f2;
+}
+
+.tabTxt:last-child {
+  border-right: none;
+}
+
+.boxTab .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8rpx solid transparent;
+  border-top-color: #666;
+  top: 22rpx;
+  right: 27%;
+}
+
+.boxTab .active {
+  color: #06b2b6;
+  background: #fff;
+}
+
+.boxTab .active .arrow {
+  border: 8rpx solid transparent;
+  border-bottom-color: #06b2b6;
+  top: 15rpx;
+}
+
+.tabLayer {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 192rpx;
+  z-index: 3;
+  background: #fff;
+  border-bottom: solid 1rpx #eee;
+  text-align: center;
+}
+
+.tabLayer text {
+  display: block;
+  width: 90%;
+  height: 80rpx;
+  color: #333;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: left;
+  border-bottom: solid 1rpx #eee;
+  margin: 0 5%;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+
+.tabLayer text:last-child {
+  border-bottom: none;
+}
+
+.tabLayer .active {
+  color: #06b2b6;
+}
+
+/*列表*/
+
+.boxList {
+  padding-top: 203rpx;
+}
+
+.boxList .list {
+  width: 100%;
+  margin-bottom: 15rpx;
+  background-color: #fff;
+  padding-bottom: 25rpx;
+  overflow: hidden;
+}
+
+.boxList .pic {
+  position: relative;
+}
+
+.boxList .pic image {
+  display: block;
+  width: 100%;
+}
+
+.boxList .pic .tag {
+  position: absolute;
+  font-size: 28rpx;
+  color: #ccc;
+  background-color: #000;
+  opacity: 0.6;
+  border-radius: 8rpx;
+  left: 20rpx;
+  top: 20rpx;
+  padding: 11rpx 15rpx;
+}
+
+.boxList .pic .tag text {
+  margin: 0 13rpx;
+}
+
+.boxList .ct {
+  padding: 20rpx 25rpx 0 25rpx;
+  overflow: hidden;
+}
+
+.boxList .price {
+  float: left;
+  color: #ff3d3d;
+  font-size: 26rpx;
+}
+
+.boxList .price .s1 {
+  font-size: 40rpx;
+}
+
+.boxList .price .s2 {
+  color: #808080;
+  margin-left: 10rpx;
+}
+
+.boxList .price .s3 {
+  color: #b2b2b2;
+  text-decoration: line-through;
+  margin-left: 20rpx;
+}
+
+.boxList .lb {
+  float: right;
+}
+
+.boxList .lb text {
+  display: inline-block;
+  color: #888;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  padding: 5rpx 8rpx;
+  margin-left: 8rpx;
+  background: #f5f5f5;
+}
+
+.boxList .tit {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 10rpx 25rpx 0 25rpx;
+}
+
+/*列表 end*/
+
+.none {
+  position: relative;
+  text-align: center;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+.none .line {
+  position: absolute;
+  display: block;
+  width: 90%;
+  top: 24rpx;
+  left: 5%;
+  border-bottom: solid 1rpx #eee;
+  z-index: 1;
+}
+
+.none .txt {
+  background-color: #fafafa;
+  position: relative;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #e5e5e5;
+  padding: 0 35rpx;
+  z-index: 2;
+}
+
+.footer {
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 128rpx;
+}
+
+.footer image {
+  width: 300rpx;
+  height: 40rpx;
+}
+
+/*返回顶部*/
+
+.btTop {
+  position: fixed;
+  width: 110rpx;
+  bottom: 200rpx;
+  right: 15rpx;
+  z-index: 100;
+}
+
+.btTop image {
+  display: block;
+  width: 100%;
+}
+
+/*返回顶部 end*/

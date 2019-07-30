@@ -1,0 +1,74 @@
+<!--pages/my/fans2/fans2.wxml-->
+<view class="boxSearch">
+  <view class="bsShow" wx:if="{{!showSearch}}" bindtap='bindSearch'>
+    <image src="../../../images/ico1.png" mode='widthFix' class="ico" />
+    <view>搜索粉丝名称</view>
+  </view>
+  <view class="bsHide" wx:if="{{showSearch}}">
+    <input placeholder="搜索粉丝名称" class="txt-search" />
+    <image src="../../../images/ico1.png" mode='widthFix' class="ico" />
+    <button class="btSearch">搜索</button>
+  </view>
+</view>
+
+<view class="fansTop">
+  <view class="tit">粉丝人数</view>
+  <view class="num">0人</view>
+</view>
+
+<view class="fansList">
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+  <view class='flist'>
+      <view class="pic">
+        <image src="../../../images/2.jpg" mode='aspectFill' />
+      </view>
+      <view class="txt">
+        <text>名称：好好啊啊</text>
+        <text>手机号码：12345678901</text>
+      </view>
+  </view>
+</view>

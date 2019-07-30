@@ -1,0 +1,65 @@
+<!--pages/my/order_recycleList/order_recycleList.wxml-->
+<view class="orderNav">
+  <view class="nav {{navData == 0 ? 'navon' : ''}}">
+    <text data-nav="0" bindtap='binNav'>全部</text>
+  </view>
+  <view class="nav {{navData == 1 ? 'navon' : ''}}">
+    <text data-nav="1" bindtap='binNav'>旅游线路</text>
+  </view>
+  <view class="nav {{navData == 2 ? 'navon' : ''}}">
+    <text data-nav="2" bindtap='binNav'>酒店客栈</text>
+  </view>
+  <view class="nav {{navData == 3 ? 'navon' : ''}}">
+    <text data-nav="3" bindtap='binNav'>景点门票</text>
+  </view>
+</view>
+
+<view class="orderList">
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">订单已取消</view>
+      <view class="bm">
+        <text class="bt2">再次购买</text>
+      </view>
+  </view>
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+      <view class="status">订单已取消</view>
+      <view class="bm">
+        <text class="bt2">再次购买</text>
+      </view>
+  </view>
+</view>
+
+<view class="none">
+  <text class='line'></text>
+  <text class='txt'>没有了</text>
+</view>

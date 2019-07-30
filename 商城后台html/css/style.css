@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+.boxserve{ min-width:985px; padding:50px; box-sizing:border-box; background-color:#fff;}
+
+.boxstep{ min-width:885px; border-bottom:solid 1px #ccc; padding-bottom:30px;}
+.boxstep .stop{ width:145px; margin:0 auto; overflow:hidden;}
+.boxstep .num{ float:left; width:34px; height:34px; font-size:18px; color:#999; line-height:32px; text-align:center; background:#fff; border-radius:50%; border:solid 1px #ccc;}
+.boxstep .txt{ float:left; width:100px; font-size:16px; color:#999; line-height:36px; margin-left:10px;}
+.boxstep .line{ width:100%; height:1px; background-color:#999; margin-top:17px;}
+.boxstep .stopon .num{ color:#fff; background-color:#2593FC; border:solid 1px #2593FC;}
+.boxstep .stopon .txt{ color:#333;}
+.boxstep .stopover .num{color:#2593FC; border:solid 1px #2593FC;}
+.boxstep .feather-check{ line-height:20px; width:25px; height:25px; margin:-3px 0 0 3px;}
+
+.boxserve h4{ font-size:16px; color:#666!important; margin-top:30px;}
+.boxserve .bmsum{ text-align:right; font-size:16px; color:#666; background-color:#F0F2F5; padding:30px; overflow:hidden;}
+.boxserve .bmsum p span{ font-size:28px; font-weight:bolder; color:#FF8B00; margin-left:15px;}
+.boxserve .bmsum p .s2{ color:#333;}
+.boxserve .bmsum a{ float:right; display: block; width:130px; height:40px; text-align:center; line-height:40px; font-size:16px; color:#FFF; border-radius:3px; background-color:#FF9B00; margin-top:5px;}
+
+.boxserve .bmagreement{ font-size:16px; color:#333; padding:30px; overflow:hidden;}
+.boxserve .bmagreement .custom-control{ float:right; margin-top:2px;}
+.boxserve .bmagreement .custom-control-input:checked~.custom-control-label:before { color: #fff; border-color: #2593FC; background-color: #2593FC;}
+.boxserve .bmagreement span{ float:right; margin-left:2px;}
+.boxserve .bmagreement a{ float:right; color:#2593FC; margin-left:5px;}
+.boxserve .bmagreement a:hover{ color:#2593FC;}
+
+.boxserve .bmcontact{ text-align:center; font-size:18px; color:#333; padding-top:50px; overflow:hidden;}
+.boxserve .bmcontact .qq{ display:inline-block; height:40px; line-height:38px; font-size:16px; color:#2593FC; background:url(../img/ico_qq.png) no-repeat 15px center; padding:0 20px 0 50px; border-radius:40px; border:solid 1px #2593FC;}
+.boxserve .bmcontact .qq:hover{ text-decoration:none;}
+.boxserve .bmcontact .er{ width:150px;}
+
+.boxserve .payTxt{ font-size:16px; color:#333; padding-top:40px;}
+.boxserve .payTxt p{ margin-bottom:8px;}
+.boxserve .payTxt .p2{ color:#999; padding-top:0; }
+.boxserve .payTxt span{ font-size:26px; font-weight:bolder; color:#FF8B00; margin-left:25px;}
+
+.boxserve .way{ border-bottom:solid 1px #ccc; padding-top:20px; padding-bottom:20px;}
+.boxserve .way .custom-control{ float:left; margin-top:8px; margin-left:60px; padding-left:0;}
+.boxserve .way .custom-control-input:checked~.custom-control-label:before { color: #fff; border-color: #2593FC; background-color: #2593FC;}
+.boxserve .way .ico{ float:left; width:40px; height:40px!important; margin-left:10px;}
+.boxserve .way .txt{ float:left; font-size:16px; margin-left:10px; line-height:40px;}
+
+.boxserve .boxbt{ text-align:center; margin:60px 0; overflow:hidden;}
+.boxserve .bitnBule{ background-color:#2593FC; color:#fff; font-size:16px; padding:5px 30px;}
+
+.boxserve .payTit{ text-align:center; font-size:28px; color:#333; padding:40px 0 20px 0;}
+.boxserve .payinfo{ width:640px; margin:0 auto 50px auto; overflow:hidden;}
+.boxserve .payinfo .txt,.boxserve .payinfo .txt2{ font-size:16px; color:#333; margin-top:20px;}
+.boxserve .payinfo .txt span{ margin-left:30px;}
+.boxserve .payinfo .txt2{ border-bottom: solid 1px #ccc; padding-bottom:40px;}
+.boxserve .payinfo .txt2 em{ font-size:26px; font-weight:bolder; font-style:normal; color:#FF8B00; margin-left:30px;}
+.boxserve .payinfo .boxer{padding:30px 0 0 0;}
+.boxserve .payinfo .boxer .er{ float:left; display:block; width:200px; height:200px;}
+.boxserve .payinfo .hint{ float:right; width:380px; font-size:16px; color:#333;}
+.boxserve .payinfo .hint a{ display:block; width:145px; color:#2593FC; margin-top:75px;}
+.boxserve .payinfo .boxpublic{ font-size:16px; color:#333; background-color:#F0F2F5; padding:20px 30px; margin-top:30px;}
+.boxserve .payinfo .boxpublic em{font-size:18px; font-weight:bolder; font-style:normal; color:#FF8B00; margin:0 15px;}
+.boxserve .payinfo .boxpublic span{ font-family:"微软雅黑"; font-weight:bolder; color:#333; margin-left:30px;}
+.boxserve .payinfo .boxbt2{ padding-top:25px;}
+.boxserve .payinfo .boxbt2 a{ float:left; color:#2593FC; font-size:16px; margin-top:6px;}
+.boxserve .payinfo .boxbt2 .bitnBule{ float:right;}
+
+.boxserve .boxresult{ text-align:center; font-size:16px; color:#333; padding:50px 0;}
+.boxserve .boxresult img{ width:70px;}
+.boxserve .boxresult .tit{font-size:28px; color:#333; margin-top:20px; margin-bottom:20px;}
+.boxserve .boxresult .bitnBule{ margin-top:50px;}
+
+.recordTop{border-bottom:solid 1px #ccc; padding-bottom:30px;}
+.recordTop .state{ overflow:hidden;}
+.recordTop .state img{ float:left; display:block; width:25px;}
+.recordTop .state span{ float:left; font-size:18px; line-height:25px; color:#F56363; margin-left:10px;}
+.recordTop .state .s1{ color:#999;}
+.recordTop .state .s2{ color:#2593FC;}
+.recordTop .txt{ font-size:16px; color:#666; padding-left:35px; padding-top:20px;}
+
+.recordTop .sum{ font-size:16px; text-align:right; color:#333;}
+.recordTop .sum em{ font-size:26px; font-weight:bolder; font-style:normal; color:#FF8B00; margin-left:30px;}
+.recordTop .topbt{ text-align:right; margin-top:30px;}
+.recordTop .topbt .btn{ height:40px; color:#fff; font-size:16px; padding:0 20px;}
+.recordTop .topbt .btyellow{ background-color:#FF9B00;}
+.recordTop .topbt .btgray{ background-color:#F6F8FA; color:#666; border:solid 1px #cecece; margin-right:25px;}
+.boxserve .dtit{ margin-top:30px; overflow:hidden;}
+.boxserve .dtit span{ float:left; font-size:16px; color:#666;}
+.boxserve .dtit .s2{ float:right;}
+
+.boxversion h2{ text-align:center; color:#fff; border-top-left-radius:10px; border-top-right-radius:10px; margin-bottom:0; padding:15px 0; background-color:#2593FC;}
+.boxversion .tit{ background-color:#FF8B00;}
+.boxversion .ls{ border:solid 1px #cecece; border-top:none; background-color:#fff; padding-bottom:70px; overflow:hidden;}
+.boxversion .jg{ height:85px; text-align:center; font-size:18px; line-height:24px; color:#2593FC; margin-top:17px; overflow:hidden;}
+.boxversion .jg span{ color:#FF8B00;}
+.boxversion .jg .price{ color:#FF8B00; font-size:24px; font-weight:bolder;}
+.boxversion .jg em{ font-size:14px; color:#FF8B00; font-style:normal; margin-left:2px;}
+.boxversion .jg .p2{ width:120px; margin:0 auto;}
+.boxversion .jg .p2 img{ float:left; display:block; width:24px; height:24px;}
+.boxversion .jg .p2 span{ float:left; display:block; color:#2593FC; margin-left:13px;}
+.boxversion .jg .btn{ background-color:#FF8B00; width:160px; height:40px; font-size:18px; color:#FFF;}
+.boxversion .ls h3{ font-size:18px; font-weight:bolder; color:#333; padding-left:35px; margin-top:30px;}
+.boxversion ul{ margin:0; padding:1px 35px 20px 35px;}
+.boxversion li{ list-style:none; font-size:16px; overflow:hidden; padding:0; margin:15px 0 0 0;}
+.boxversion li .ico{ float:left; width:20px; line-height:20px; color:#2593FC; margin-right:15px; overflow:hidden;}
+.boxversion li .ico2{ color:#FF8B00;}
+.boxversion li .ico .feather-check{ width:20px; height:20px;}
+.boxversion li .txt{moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    box-pack: center;
+	color:#595959;
+	}
+.boxversion li .txt .s1,.boxversion li .txt .s2{ display:inline-block; background-color:#2593FC; color:#fff; font-size:12px; padding:5px 14px; margin-left:25px;}
+.boxversion li .txt .s2{ background-color:#FF8B00;}
+.boxversion li .txt2{ color:#9B9A9A;}

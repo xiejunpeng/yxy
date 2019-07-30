@@ -1,0 +1,58 @@
+<!--pages/my/agent_succeed/agent_succeed.wxml-->
+<view class="agentTop">
+  <image src="../../../images/ico20.png" mode='widthFix' class="ico" />
+  <view class="p1">恭喜您！代理成功</view>
+  <view>赶快开启您的赚钱之旅吧~</view>
+  <view class='bt'>马上分享商品</view>
+</view>
+
+<view class="agentTit">
+  <view class="hd">
+    <image src="../../../images/2.jpg" mode='aspectFill'/>
+  </view>
+  <view class="txt">
+    <view>游云旅游</view>
+    <view class="p2"><icon type="success" size="14"/>认证商家</view>
+  </view>
+  <view class="aindex">进入首页></view>
+</view>
+
+<view class="agentBlock">
+  <view class='abtit'>热门商品</view>
+  <view class='ablist'>
+        <image src="../../../images/num1.png" mode='widthFix' class='ico' />
+        <view class="pic">
+          <image src="../../../images/2.jpg" mode='aspectFill' />
+        </view>
+        <view class="right">
+          <view class="tit">2天1晚/3天2晚度假（住宿1晚/2晚+动物园/欢乐世界/大马双园游）2天...</view>
+          <view class="price">￥
+            <text>530~688</text>
+          </view>
+        </view>
+  </view>
+  <view class='ablist'>
+        <image src="../../../images/num2.png" mode='widthFix' class='ico' />
+        <view class="pic">
+          <image src="../../../images/2.jpg" mode='aspectFill' />
+        </view>
+        <view class="right">
+          <view class="tit">2天1晚/3天2晚度假（住宿1晚/2晚+动物园/欢乐世界/大马双园游）2天...</view>
+          <view class="price">￥
+            <text>530~688</text>
+          </view>
+        </view>
+  </view>
+  <view class='ablist'>
+        <image src="../../../images/num3.png" mode='widthFix' class='ico' />
+        <view class="pic">
+          <image src="../../../images/2.jpg" mode='aspectFill' />
+        </view>
+        <view class="right">
+          <view class="tit">2天1晚/3天2晚度假（住宿1晚/2晚+动物园/欢乐世界/大马双园游）2天...</view>
+          <view class="price">￥
+            <text>530~688</text>
+          </view>
+        </view>
+  </view>
+</view>

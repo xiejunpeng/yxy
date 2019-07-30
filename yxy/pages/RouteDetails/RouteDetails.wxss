@@ -1,0 +1,479 @@
+/* 公共部份的头部 */
+
+.header {
+  position: relative;
+  padding-bottom: 40rpx;
+  border-bottom: 10rpx solid #f5f5f5;
+}
+
+swiper {
+  height: 420rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 420rpx;
+  display: inline-block;
+}
+
+.headerText {
+  width: 548rpx;
+  padding: 10rpx 22rpx 0 22rpx;
+  position: relative;
+}
+
+.headerText .title {
+  margin-top: 10rpx;
+  font-size: 34rpx;
+  line-height: 50rpx;
+  color: #313131;
+  overflow: hidden;
+}
+
+.lbls {
+  display: inline-block;
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+}
+
+.lbls text {
+  background-color: #f5f5f5;
+  margin-right: 10rpx;
+  font-size: 24rpx;
+  color: #808080;
+  padding: 5rpx 10rpx;
+}
+
+.price {
+  color: #ff3d3d;
+  font-size: 38rpx;
+  margin-top: 10rpx;
+}
+
+.price text {
+  font-size: 44rpx;
+  margin-left: 5rpx;
+  margin-right: 22rpx;
+}
+
+.price .money {
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+.price .qi {
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #4d4d4d;
+  display: inline-block;
+}
+
+.right {
+  position: absolute;
+  top: 30rpx;
+  right: -100rpx;
+}
+
+.rightLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightIgm {
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 16rpx;
+}
+
+.rightText {
+  font-size: 24rpx;
+  color: #3e9ec8;
+}
+
+.topLogo {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+
+.fl {
+  float: left;
+  padding-left: 40rpx;
+}
+
+.fr {
+  float: right;
+  padding-right: 40rpx;
+}
+
+.topLogo image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+/* 万能清除器 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* 套餐类别 */
+
+.tick_type {
+  padding: 0 20rpx;
+  border: 1rpx solid #f6f6f6;
+}
+
+.tick_type .typeTitl {
+  font-weight: 700;
+  color: #333;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  padding-right: 10rpx;
+}
+
+.type_img {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  padding-right: 20rpx;
+  position: relative;
+  top: 8rpx;
+}
+
+.change {
+  border: 2rpx solid #ca9756;
+  border-radius: 8rpx;
+  display: inline-block;
+  height: 70rpx;
+  background: #fef5f0;
+  margin-bottom: 30rpx;
+}
+
+.ticket_name {
+  font-size: 28rpx;
+  line-height: 70rpx;
+  padding: 0 20rpx;
+}
+
+.oText {
+  font-size: 28rpx;
+  color: #969696;
+}
+
+.boxTit {
+  padding: 35rpx 25rpx 0 25rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.boxTit .ico {
+  float: left;
+  width: 38rpx;
+}
+
+.boxTit .tit {
+  float: left;
+  line-height: 38rpx;
+  font-size: 36rpx;
+  color: #1a1a1a;
+  margin-left: 10rpx;
+  font-weight: 700;
+}
+
+.boxTit .more {
+  position: relative;
+  float: right;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  color: #808080;
+  padding-right: 26rpx;
+}
+
+.boxTit .arrow {
+  position: absolute;
+  height: 16rpx;
+  width: 16rpx;
+  border-width: 1rpx 1rpx 0 0;
+  border-color: #666;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  right: 0rpx;
+  top: 50%;
+  margin-top: -11rpx;
+}
+
+/* 主体部份 */
+
+/* 主体部份的选项卡 */
+
+.main .mainTitle {
+  padding: 0 60rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .active {
+  color: orange;
+}
+
+.main .mainTitle .titles .titlesImg {
+  height: 28rpx;
+  width: 28rpx;
+  margin-right: 20rpx;
+}
+
+.main .mainTitle .titles .titleText {
+  font-size: 28rpx;
+  line-height: 108rpx;
+  height: 108rpx;
+}
+
+/* 详情 */
+
+.main .mainOption {
+  padding: 0 24rpx;
+  text-align: center;
+}
+
+.main .mainOption .optionText {
+  font-size: 35rpx;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 22rpx;
+}
+
+.main .mainOption .mainOptionImg {
+  width: 700rpx;
+}
+
+/* 猜你喜欢的公共部份 */
+
+.boxList {
+  display: block;
+  padding: 3rpx 25rpx 0rpx 0rpx;
+  overflow: hidden;
+}
+
+.boxList .list {
+  float: left;
+  width: 50%;
+  padding: 25rpx 0 0 20rpx;
+  box-sizing: border-box;
+}
+
+.boxList .list .pic {
+  position: relative;
+}
+
+.boxList .list .site {
+  position: absolute;
+  background-color: #141414;
+  top: 15rpx;
+  left: 15rpx;
+  padding: 12rpx 6px;
+  border-radius: 8rpx;
+  opacity: 0.7;
+}
+
+.boxList .list .site image {
+  float: left;
+  width: 15rpx;
+  margin-top: 2px;
+}
+
+.boxList .list .site text {
+  float: left;
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color: #fff;
+  margin-left: 15rpx;
+}
+
+.boxList .list .img {
+  display: block;
+  width: 100%;
+  height: 230rpx;
+  border-radius: 15rpx;
+}
+
+.boxList .list .tit {
+  color: #333;
+  font-size: 30rpx;
+  padding-top: 19rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.boxList .list .lbl text {
+  display: inline-block;
+  background-color: #f5f5f5;
+  font-size: 24rpx;
+  color: #808080;
+  padding: 5rpx 10rpx;
+  margin-right: 5rpx;
+}
+
+.boxList .list .price {
+  color: #ff3d3d;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.boxList .list .price .qi {
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #4d4d4d;
+}
+
+.boxList .list .price text {
+  font-size: 36rpx;
+  margin-left: 5rpx;
+}
+
+.boxList .list .price .activity {
+  float: right;
+  display: block;
+  border: solid 1rpx #06b2b6;
+  color: #06b2b6;
+  font-size: 26rpx;
+  line-height: 28rpx;
+  padding: 5rpx 8rpx;
+  margin-top: 2rpx;
+}
+
+/* 尾部公共部份 */
+
+.footer {
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80rpx 0 120rpx 0;
+}
+
+.footer image {
+  width: 300rpx;
+  height: 40rpx;
+}
+
+/* 尾部、首页、客服立即购买  公共部份*/
+
+.order_bot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+  border-top: 1px solid #e0e0e0;
+  z-index: 1;
+}
+
+.logo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50rpx;
+}
+
+.logo_leftImg {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.logo_name {
+  font-size: 22rpx;
+  line-height: 44rpx;
+}
+
+.logo_right {
+  font-size: 30rpx;
+  line-height: 80rpx;
+  padding: 0 166rpx;
+  background: #ff9505;
+  color: #fff;
+  border-radius: 60rpx;
+  margin-left: 50rpx;
+}
+
+/* 生成海报跟回到顶部的图标 公共部份*/
+
+.icon image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.createBanner {
+  position: fixed;
+  bottom: 380rpx;
+  right: 36rpx;
+}
+
+.roof {
+  position: fixed;
+  right: 36rpx;
+  bottom: 240rpx;
+}
+
+/* 修改套餐 */
+
+.more {
+  position: relative;
+  float: right;
+  font-size: 28rpx;
+  line-height: 47rpx;
+  color: #808080;
+  padding-right: 26rpx;
+  padding-top: 26rpx;
+}
+
+.moreImg {
+  width: 18rpx;
+  height: 30rpx;
+  position: relative;
+  top: 5rpx;
+}
+
+.date .dates {
+  display: inline-block;
+  padding: 0 30rpx;
+  border-radius: 14rpx;
+  margin-bottom: 30rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #F7F7F7;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.date .dates .datesTest, .date .dates .dateItem {
+  font-size: 22rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+}
+
+.date .dates .dateItem {
+  color: orange;
+}
+.date .dates .dateItem .qian{
+  margin-right: 8rpx;
+}
+.activeDate {
+  border: 1rpx solid orange; 
+}

@@ -1,0 +1,76 @@
+<!--pages/my/order_details_unpaid/order_details_unpaid.wxml-->
+<view class="boxStatus">
+  <image src="../../../images/odbg1.jpg" mode='widthFix' />
+  <view class="txt">
+    <view class="p1">待支付</view>
+    <view>逾期未付款，订单将自动取消</view>
+  </view>
+</view>
+
+<view class="orderList">
+  <view class='list'>
+      <view class="ct">
+        <image src="../../../images/13.jpg" mode='widthFix'/>
+        <view class="txt">
+          <view class="tit">大理丽江香格里拉普达措虎跳峡五日经典游大理丽江香格里拉</view>
+          <view class="type">出游人群:成人；套餐类型:豪华游</view>
+          <view class="type">出行日期:2019-03-26</view>
+        </view>
+        <view class="price">
+          <text>￥530.00</text>
+          <text class="p2">×1</text>
+        </view>
+      </view>
+      <view class="total">合计：
+        <text>￥530.00</text>
+      </view>
+  </view>
+</view>
+
+<view class="odBlock">
+  <view class='h3'>出游信息</view>
+  <view class='odrow'>
+      <view class="tit">姓名</view>
+      <view class="txt">刘晓</view>
+  </view>
+  <view class='odrow'>
+      <view class="tit">手机号</view>
+      <view class="txt">12312312312</view>
+  </view>
+  <view class='odrow'>
+      <view class="tit">出发地</view>
+      <view class="txt">广州</view>
+  </view>
+  <view class='odrow'>
+      <view class="tit">套餐类型</view>
+      <view class="txt">豪华5日游</view>
+  </view>
+  <view class='odrow'>
+      <view class="tit">出行人数</view>
+      <view class="txt">2成人  2儿童</view>
+  </view>
+  <view class='odrow'>
+      <view class="tit">出发时间</view>
+      <view class="txt">2019-02-02</view>
+  </view>
+</view>
+
+<view class="odBlock">
+  <view class='odrow'>
+    <view class="tit">订单编号</view>
+    <view class="txt boxflex">180817-180326892253641</view>
+  </view>
+  <view class='odrow'>
+          <view class="tit">支付状态</view>
+          <view class="txt boxflex">待付款</view>
+          </view>
+  <view class='odrow'>
+          <view class="tit">创建时间</view>
+          <view class="txt boxflex">2019-03-26 17:20:33</view>
+  </view>
+</view>
+
+<view class="oddetailsBm">
+    <navigator url='../../order_pay_success/order_pay_success' class="bt2">去付款</navigator>
+    <view class="bt1">取消订单</view>
+</view>

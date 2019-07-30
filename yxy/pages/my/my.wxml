@@ -1,0 +1,62 @@
+<!--pages/my/my.wxml-->
+<view class="myTop">
+  <view class='mbg'><image src="../../images/mybg.jpg" mode='widthFix' /></view>
+  <view class="myhead">
+    <image src="../../images/2.jpg" mode='aspectFill' />
+  </view>
+  <view class="myname">黄先生</view>
+
+  <view class="odcolumn">
+    <view class="tit">
+      <text class="s1">旅游订单</text>
+      <navigator url='order_list/order_list' class='more'>查看更多<text class='arrow'></text></navigator>
+    </view>
+
+    <view class="status">
+      <navigator url='order_list/order_list' class='sl'>
+        <view class="dico">
+          <image src="../../images/ico_o1.png" mode='widthFix'/>
+          <view class="num">2</view>
+        </view>
+        <view>全部订单</view>
+      </navigator>
+      <view class='sl'>
+        <view class="dico">
+          <image src="../../images/ico_o2.png" mode='widthFix'/>
+        </view>
+        <view>待付款</view>
+      </view>
+      <view class='sl'>
+        <view class="dico">
+          <image src="../../images/ico_o3.png" mode='widthFix'/>
+        </view>
+        <view>待消费</view>
+      </view>
+      <view class='sl'>
+        <view class="dico">
+          <image src="../../images/ico_o4.png" mode='widthFix'/>
+        </view>
+        <view>待评论</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="myBlock">
+  <navigator url='collect/collect' class="block">
+      <image src="../../images/ico_ob1.png" mode='widthFix'/>
+      <text class="txt">我的收藏</text>
+      <text class="arrow"></text>
+  </navigator>
+  <navigator url='invite_distribution/invite_distribution' class="block">
+      <image src="../../images/ico_ob2.png" mode='widthFix'/>
+      <text class="txt">邀请分销员</text>
+      <text class="arrow"></text>
+  </navigator>
+  <navigator url='fans/fans' class="block">
+      <image src="../../images/ico_ob3.png" mode='widthFix'/>
+      <text class="txt">我的粉丝</text>
+      <text class="arrow"></text>
+  </navigator>
+</view>

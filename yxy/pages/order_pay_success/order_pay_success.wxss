@@ -1,0 +1,52 @@
+/* pages/order_pay_success/order_pay_success.wxss */
+
+page {
+  background-color: #fafafa;
+}
+
+.payico image {
+  display: block;
+  width: 190rpx;
+  margin: 90rpx auto 0 auto;
+}
+
+.paytxt, .payprice {
+  text-align: center;
+  overflow: hidden;
+}
+
+.paytxt {
+  color: #808080;
+  font-size: 32rpx;
+  margin-top: 25rpx;
+}
+
+.payprice {
+  color: #333;
+  font-size: 50rpx;
+  margin-top: 60rpx;
+}
+
+.paya {
+  width: 560rpx;
+  margin: 135rpx auto 0 auto;
+}
+
+.paya .bt {
+  display: inline-block;
+  width: 260rpx;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  border: solid 1rpx #06b2b6;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  background-color: #06b2b6;
+  padding: 20rpx 0;
+}
+
+.paya .a1 {
+  background-color: #fff;
+  color: #06b2b6;
+  margin-right: 40rpx;
+}

@@ -1,0 +1,68 @@
+/* pages/my/fans2/fans2.wxss */
+.boxSearch {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  padding: 22rpx 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 3;
+  top: 0;
+}
+
+.boxSearch .bsShow {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.boxSearch .bsShow, .boxSearch .txt-search {
+  width: 100%;
+  height: 68rpx;
+  font-size: 30rpx;
+  line-height: 68rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  padding: 0 20rpx 0 82rpx;
+}
+
+.boxSearch .bsHide {
+  display: block;
+  padding-right: 80rpx;
+}
+
+.boxSearch .ico {
+  position: absolute;
+  width: 35rpx;
+  top: 38rpx;
+  left: 50rpx;
+}
+
+.boxSearch .btSearch {
+  position: absolute;
+  height: 68rpx;
+  color: #808080;
+  font-size: 32rpx;
+  line-height: 68rpx;
+  text-align: right;
+  right: 30rpx;
+  top: 21rpx;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+}
+
+.boxSearch .btSearch::after {
+  border: none;
+}
+
+.fansTop{ position: fixed; width:100%; height:80rpx; line-height:80rpx; background-color:#fff; padding: 0 30rpx; border-bottom:solid 1rpx #f2f2f2; box-sizing:border-box; top:110rpx; overflow: hidden; z-index:2; }
+.fansTop .tit{ float:left; font-size: 32rpx; color:#000;}
+.fansTop .num{ float:right; font-size: 30rpx; color:#b2b2b2;}
+
+.fansList{ margin-top:190rpx; padding:0 30rpx 30rpx 30rpx;}
+.fansList .flist{ position:relative; color:#666; border-bottom:solid 1rpx #f2f2f2; padding:50rpx 0; overflow:hidden;}
+.fansList .pic{ float:left; display:table-cell; vertical-align:middle; width:85rpx; height:85rpx; text-align:center; background-color:#fff; border:solid 2rpx #FFF; border-radius:40rpx;}
+.fansList .pic image{ width: 100%; height:100%; border-radius:40rpx;}
+.fansList .txt{ float: left; width: 582rpx; font-size:32rpx; padding:0 0 0 20rpx;}
+.fansList .txt text{ display: block; margin-top: 3rpx; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}

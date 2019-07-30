@@ -1,0 +1,64 @@
+<!--pages/my/collect/collect.wxml-->
+<view class="boxSearch">
+  <view class="bsShow" wx:if="{{!showSearch}}" bindtap='bindSearch'>
+    <image src="../../../images/ico1.png" mode='widthFix' class="ico" />
+    <view>搜索目的地/产品名称</view>
+  </view>
+  <view class="bsHide" wx:if="{{showSearch}}">
+    <input placeholder="搜索目的地/产品名称" class="txt-search" />
+    <image src="../../../images/ico1.png" mode='widthFix' class="ico" />
+    <button class="btSearch">搜索</button>
+  </view>
+</view>
+<view class="collectNav">
+  <view class="nav {{navData == 0 ? 'navon' : ''}}">
+    <text data-nav="0" bindtap='binNav'>全部</text>
+  </view>
+  <view class="nav {{navData == 1 ? 'navon' : ''}}">
+    <text data-nav="1" bindtap='binNav'>商品</text>
+  </view>
+  <view class="nav {{navData == 2 ? 'navon' : ''}}">
+    <text data-nav="2" bindtap='binNav'>线路</text>
+  </view>
+  <view class="nav {{navData == 3 ? 'navon' : ''}}">
+    <text data-nav="3" bindtap='binNav'>酒店</text>
+  </view>
+  <view class="nav {{navData == 4 ? 'navon' : ''}}">
+    <text data-nav="4" bindtap='binNav'>景点</text>
+  </view>
+</view>
+
+<view class='main'>
+  <view class='shop' wx:for='{{shopcarData}}' wx:key='this'>
+    <view class='shop_check_box' data-index='{{index}}' hidden='{{!compileShow}}' catchtap='checkTap'>
+      <icon type="circle" size="18" hidden='{{item.check}}'></icon>
+      <icon type="success" size="18" color='#06b2b6' hidden='{{!item.check}}'></icon>
+    </view>
+    <image class='shop_img' src='../../../images/2.jpg' mode='aspectFill' />
+    <view class='shop_detail'>
+      <text class='shop_name'>{{item.name}}</text>
+      <view class='shop_detail_bottom'>
+        <text>￥</text>
+        <text class='shop_price'>{{item.price}}</text>起
+      </view>
+      <view class='boxLb'>
+        <text>度假胜地</text>
+        <text>高性价比</text>
+        <text>千人爆款</text>
+        <text>沉醉万众花海</text>
+        <view class='site'><image src='../../../images/ico7.png' mode='widthFix' /><view class='stxt'>云南云南</view></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <view class='check_box' hidden='{{!compileShow}}'>
+    <icon class="icon" type="circle" size="18" hidden='{{allsel}}' catchtap='allcheckTap'></icon>
+    <icon class="icon" type="success" size="18" color='#06b2b6' hidden='{{!allsel}}' catchtap='allcheckTap'></icon>
+    <text class='check_text' catchtap='allcheckTap'>全选</text>
+  </view>
+  
+  <view class='bt' catchtap='compileTap'>{{compileShow?'完成':'编辑'}}</view>
+
+  <view class='btdelete' catchtap='deleteshopTap' hidden='{{!compileShow}}'>删除</view>
+</view>

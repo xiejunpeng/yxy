@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/my/my",
+    "pages/my/order_list/order_list",
+    "pages/my/order_recycleList/order_recycleList",
+    "pages/my/order_details_unpaid/order_details_unpaid",
+    "pages/my/order_details_consumption/order_details_consumption",
+    "pages/my/order_details_accomplish/order_details_accomplish",
+    "pages/my/order_details_cancel/order_details_cancel",
+    "pages/my/order_details_comment/order_details_comment",
+    "pages/my/collect/collect",
+    "pages/order_pay_success/order_pay_success",
+    "pages/my/invite_distribution/invite_distribution",
+    "pages/my/agent/agent",
+    "pages/my/agent_succeed/agent_succeed",
+    "pages/verify_phone/verify_phone",
+    "pages/my/fans/fans",
+    "pages/my/fans2/fans2",
+    "pages/RouteDetails/RouteDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "游小云",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#06b2b6",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/btm1.png",
+        "selectedIconPath": "images/btm1h.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/btm4.png",
+        "selectedIconPath": "images/btm4h.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,325 @@
+<view class='boxView'>
+
+  <view class="boxSearch">
+    <view class="bsShow" wx:if="{{!showSearch}}" bindtap='bindSearch'>
+      <image src="../../images/ico1.png" mode='widthFix' class="ico" />
+      <view>搜索目的地/产品名称</view>
+    </view>
+    <view class="bsHide" wx:if="{{showSearch}}">
+      <input placeholder="搜索目的地/产品名称" class="txt-search" />
+      <image src="../../images/ico1.png" mode='widthFix' class="ico" />
+      <button class="btSearch">搜索</button>
+    </view>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="#f7f7f8" indicator-active-color="rgba(6,178,182,1)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='widthFix' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='boxMen'>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu1.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>周边游</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu2.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>国内游</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu3.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>出境游</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu4.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>自助游</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu5.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>酒店</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu6.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>景点门票</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu7.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>美食推荐</text>
+    </navigator>
+    <navigator class='menlable' url='../list/list'>
+      <view class='nl'>
+        <image src="../../images/menu8.png" mode='aspectFit' />
+      </view>
+      <text class='tit'>当地租车</text>
+    </navigator>
+  </view>
+  <!-- 热门线路 -->
+  <view class='boxBlock'>
+    <view class="boxTit">
+      <image src="../../images/ico2.png" mode="widthFix" class="ico" />
+      <text class="tit">热门线路</text>
+      <navigator class="more" bindtap="onclickPath">更多
+        <text class='arrow'></text>
+      </navigator>
+    </view>
+    <view class='boxList'>
+      <navigator class='list'>
+        <view class='pic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='lbl'>
+          <text>度假胜地</text>
+          <text>度假胜地</text>
+        </view>
+        <view class='price'>¥
+          <text>2580</text>
+          <text class="qi">起</text>
+        </view>
+      </navigator>
+      <navigator class='list'>
+        <view class='pic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='lbl'>
+          <text>度假胜地</text>
+          <text>度假胜地</text>
+        </view>
+        <view class='price'>¥
+          <text>2580</text>
+          <text class="qi">起</text>
+        </view>
+      </navigator>
+      <navigator class='list'>
+        <view class='pic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='lbl'>
+          <text>度假胜地</text>
+          <text>度假胜地</text>
+        </view>
+        <view class='price'>¥
+          <text>2580</text>
+          <text class="qi">起</text>
+        </view>
+      </navigator>
+      <navigator class='list'>
+        <view class='pic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='lbl'>
+          <text>度假胜地</text>
+          <text>度假胜地</text>
+        </view>
+        <view class='price'>¥
+          <text>2580</text>
+          <text class="qi">起</text>
+        </view>
+      </navigator>
+    </view>
+    <!-- <view class="boxMore"><text class="arrow"></text></view> -->
+  </view>
+  <!-- 景点门票 -->
+  <view class='boxBlock'>
+    <view class="boxTit">
+      <image src="../../images/ico8.png" mode="widthFix" class="ico" />
+      <text class="tit">景点门票</text>
+      <navigator class="more">更多
+        <text class='arrow'></text>
+      </navigator>
+    </view>
+    <view class='boxList'>
+      <!-- 左边的图 -->
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 酒店 -->
+  <view class='boxBlock'>
+    <view class="boxTit">
+      <image src="../../images/ico8.png" mode="widthFix" class="ico" />
+      <text class="tit">景点门票</text>
+      <navigator class="more">更多
+        <text class='arrow'></text>
+      </navigator>
+    </view>
+    <view class='boxList'>
+      <!-- 左边的图 -->
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='listItem'>
+        <view class='picItem'>
+          <image src="../../images/4.jpg" mode='aspectFill' class='img' />
+        </view>
+        <view class="boxListItem">
+          <view class='tit'>悉尼水族馆门票（与海洋生物面对面）</view>
+          <view class='price'>
+            <view class='priceActivity'>分享返现</view>
+            <view class='priceActivity'>分享返现</view>
+            <view class="prices">
+              <text class="moneyLogo"> ¥ </text>
+              <text class="money">2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <image src="../images/footer.png"></image>
+  </view>
+  <!--电话二维码-->
+  <view class="boxLink">
+    <view class="pic">
+      <image src="../../images/ico_phone.png" mode='widthFix' />
+    </view>
+    <view class="pic er" bindtap='binEr'>
+      <image src="../../images/ico_er.png" mode='widthFix' />
+    </view>
+  </view>
+  <view class="mask" wx:if="{{showEr}}" bindtap="btClose"></view>
+  <view class="boxEr" wx:if="{{showEr}}">
+    <image src="../../images/10.jpg" mode='widthFix' />
+    <view>扫二维码关注</view>
+    <view class="close" bindtap="btClose">×</view>
+  </view>
+  <!--电话二维码 end-->
+
+</view>

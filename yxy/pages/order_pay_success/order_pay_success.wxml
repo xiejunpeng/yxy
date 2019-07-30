@@ -1,0 +1,10 @@
+<!--pages/order_pay_success/order_pay_success.wxml-->
+<view class="payico">
+  <image src="../../images/ico16.png" mode='widthFix' />
+</view>
+<view class="paytxt">支付成功</view>
+<view class="payprice">￥6666.666</view>
+<view class="paya">
+  <view class="bt a1">回到首页</view>
+  <view class="bt">查看订单</view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/my/agent_succeed/agent_succeed.wxss */
+page{
+  background-color: #fafafa;
+}
+.agentTop{ text-align:center; color:#808080; font-size: 32rpx; background-color:#fff; padding:40rpx 20rpx 50rpx 20rpx;}
+.agentTop .ico{ width:190rpx; margin-top:25rpx;}
+.agentTop .p1{ color:#06b2b6; font-size:38rpx; margin:20rpx 0 15rpx 0;}
+.agentTop .bt{ display:block; width:260rpx; height:90rpx; color:#fff; line-height:90rpx; background-color:#06b2b6; border-radius:10rpx; margin:45rpx auto 0 auto;}
+
+.agentTit{background-color:#fff; padding:35rpx; margin-top:15rpx; overflow:hidden;}
+.agentTit .hd{ float:left; width:95rpx; height:95rpx; display:table-cell; vertical-align:middle; text-align:center; background-color:#fff; }
+.agentTit .hd, .agentTit .hd image{ border-radius:10rpx;}
+.agentTit .hd image{ width:100%; height:100%;}
+.agentTit .txt{ float:left; font-size:32rpx; color:#333333; margin-left:20rpx;}
+.agentTit .txt .p2{ color:#808080; font-size:28rpx; line-height:36rpx; margin-top:15rpx;}
+.agentTit .txt .p2 icon{ float: left; margin-right:5rpx;}
+.agentTit .aindex{ float:right; color:#06b2b6; font-size: 34rpx; font-weight:bolder; margin-top:25rpx;}
+
+.agentBlock{background-color:#fff; border-top:solid 1rpx #e6e6e6; padding:35rpx 0;}
+.agentBlock .abtit{line-height:34rpx; letter-spacing:1rpx; font-size: 34rpx; font-weight: bolder; color:#333; border-left:solid 5rpx #06b2b6; padding-left:15rpx; margin:0 35rpx 15rpx 35rpx;}
+.agentBlock .ablist{ border-bottom:solid 1rpx #e6e6e6; padding:28rpx 0 28rpx 2rpx; margin:0 35rpx; overflow:hidden;}
+.agentBlock .ablist:last-child{ border-bottom:none;}
+.agentBlock .ablist .ico{ float: left; width: 37rpx; margin-top: 45rpx;}
+.agentBlock .pic{ float:left; width:140rpx; height:140rpx; display:table-cell; vertical-align:middle; text-align:center; background-color:#fff; margin-left: 20rpx;}
+.agentBlock .pic image{ display:block; width:100%; height:100%;}
+.agentBlock .right{float: right; width: 475rpx;}
+.agentBlock .tit{ color:#333; font-size: 32rpx; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+.agentBlock .price{ color:#ff3d3d; font-size:28rpx; line-height: 38rpx; margin-top:7rpx;}
+.agentBlock .price text{ font-size:38rpx;}

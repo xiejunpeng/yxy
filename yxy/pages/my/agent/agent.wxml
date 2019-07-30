@@ -1,0 +1,37 @@
+<!--pages/my/agent/agent.wxml-->
+<view class="bgagent">
+  <view class='bgimage'><image src="../../../images/mybg2.jpg" mode='widthFix' /></view>
+  <view class="agent">
+    <view class="head">
+      <image src="../../../images/2.jpg" mode='aspectFill' />
+    </view>
+    <view class="tit">来自你的好友
+      <text>黄先生</text>的推荐</view>
+    <view class="tit">成为
+      <text>游云旅游</text>商家代理，获取高额佣金</view>
+    <view class="ct">
+      <image src="../../../images/tit.jpg" mode='widthFix' class="picTit" />
+      <view class='list'>
+        <view class='lico'>
+          <image src="../../../images/a1.png" mode='widthFix' />
+          <view>分享赚钱</view>
+          <view class="p2">分享商品<text>赚取佣金</text></view>
+        </view>
+        <view class='lico'>
+          <image src="../../../images/a2.png" mode='widthFix' />
+          <view>邀请分销员</view>
+          <view class="p2">邀请成功有奖<text>下级分享 上级有奖</text></view>
+        </view>
+      </view>
+      <image src="../../../images/tu.png" mode='widthFix' class="pic2" />
+      <view class="txt">
+        <view>全民代理，一起赚钱</view>
+        <view class="p2">邀请好友成为代理商<text>享受权益，赚取佣金</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="agentBm fixed">
+  <navigator url='../agent_succeed/agent_succeed'>马上申请成为代理</navigator> 
+</view>

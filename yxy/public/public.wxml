@@ -1,0 +1,131 @@
+<!-- 头部公共部份 -->
+<view class="header">
+  <view class="headerSwiper">
+    <swiper indicator-dots="{{indicatorDots}}" circular="true" indicator-color="#f7f7f8" indicator-active-color="rgba(6,178,182,1)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style="height:420rpx" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="topLogo">
+    <image class="fl" src="../images/back.png"></image>
+    <image class="fr" src="../images/unlike.png"></image>
+  </view>
+  <view class="headerText">
+    <view class="title">
+      【咨询有礼】圣灵群岛哈迪大堡礁游船一日游 (艾尔利滩/汉密尔顿岛/白日梦岛出发)
+    </view>
+    <view class="right">
+      <view class="rightLogo">
+        <image class="rightIgm" src="../images/标题旁边的转发好友.png"></image>
+        <text class="rightText">分享好友</text>
+      </view>
+    </view>
+    <view class="lbls">
+      <text>特惠</text>
+      <text>特惠</text>
+      <text>特惠</text>
+    </view>
+    <view class='price'>
+      <text class="money">¥</text>
+      <text>2580</text>
+      <text class="qi">起</text>
+    </view>
+  </view>
+</view>
+<!-- 猜你喜欢公共部份 -->
+<view class='boxBlock'>
+  <view class="boxTit">
+    <text class="tit">猜你喜欢</text>
+  </view>
+  <view class='boxList'>
+    <navigator class='list'>
+      <view class='pic'>
+        <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+      </view>
+      <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+      <view class='lbl'>
+        <text>度假胜地</text>
+        <text>度假胜地</text>
+      </view>
+      <view class='price'>¥
+        <text>2580</text>
+        <text class="qi">起</text>
+      </view>
+    </navigator>
+    <navigator class='list'>
+      <view class='pic'>
+        <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+      </view>
+      <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+      <view class='lbl'>
+        <text>度假胜地</text>
+        <text>度假胜地</text>
+      </view>
+      <view class='price'>¥
+        <text>2580</text>
+        <text class="qi">起</text>
+      </view>
+    </navigator>
+    <navigator class='list'>
+      <view class='pic'>
+        <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+      </view>
+      <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+      <view class='lbl'>
+        <text>度假胜地</text>
+        <text>度假胜地</text>
+      </view>
+      <view class='price'>¥
+        <text>2580</text>
+        <text class="qi">起</text>
+      </view>
+    </navigator>
+    <navigator class='list'>
+      <view class='pic'>
+        <image src="../../images/1.jpg" mode='aspectFill' class='img' />
+      </view>
+      <view class='tit'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+      <view class='lbl'>
+        <text>度假胜地</text>
+        <text>度假胜地</text>
+      </view>
+      <view class='price'>¥
+        <text>2580</text>
+        <text class="qi">起</text>
+      </view>
+    </navigator>
+  </view>
+  <!-- <view class="boxMore"><text class="arrow"></text></view> -->
+</view>
+<!-- 尾部 -->
+<view class="footer">
+  <image src="../images/footer.png"></image>
+</view>
+<!-- 尾部、首页、客服立即购买 -->
+<view class="order_bot">
+  <view class="logo_item">
+    <view class="logo_left">
+      <image class="logo_leftImg" src="../images/back.jpg"></image>
+      <text class="logo_name">首页</text>
+    </view>
+    <view class="logo_left">
+      <image class="logo_leftImg" src="../images/kefu.jpg"></image>
+      <text class="logo_name">客服</text>
+    </view>
+    <view class="logo_right">
+      立即购买
+    </view>
+  </view>
+</view>
+<!-- 生成海报跟回到顶部的图标 -->
+<view class="icon">
+  <view class="createBanner">
+    <image src="../images/back_top.png"></image>
+  </view>
+  <view class="roof">
+  <image src="../images/kefu_logo.png"></image>
+  </view>
+</view>
