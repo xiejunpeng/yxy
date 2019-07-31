@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -50,20 +50,6 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/list/list",
-					"pathName": "pages/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/list/list",
-					"pathName": "pages/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "pages/RouteDetails/RouteDetails",
 					"pathName": "pages/RouteDetails/RouteDetails",
 					"query": "",
@@ -71,22 +57,23 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/RouteDetails/RouteDetails",
-					"pathName": "pages/RouteDetails/RouteDetails",
+					"name": "pages/hotelDetails/hotelDetails",
+					"pathName": "pages/hotelDetails/hotelDetails",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/RouteDetails/RouteDetails",
-					"pathName": "pages/RouteDetails/RouteDetails",
+					"name": "pages/ticketDetails/ticketDetails",
+					"pathName": "pages/ticketDetails/ticketDetails",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/RouteDetails/RouteDetails",
-					"pathName": "pages/RouteDetails/RouteDetails",
+					"name": "pages/view_order/view_order",
+					"pathName": "pages/view_order/view_order",
+					"query": "",
 					"scene": null
 				}
 			]

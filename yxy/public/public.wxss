@@ -3,7 +3,7 @@
 
 .header {
   position: relative;
-  padding-bottom: 40rpx;
+  /* padding-bottom: 40rpx; */
   border-bottom: 10rpx solid #f5f5f5;
 }
 
@@ -18,12 +18,13 @@ swiper {
 }
 
 .headerText {
-  width: 548rpx;
+  /* width: 548rpx; */
   padding: 10rpx 22rpx 0 22rpx;
   position: relative;
 }
 
 .headerText .title {
+  width: 548rpx;
   margin-top: 10rpx;
   font-size: 34rpx;
   line-height: 50rpx;
@@ -34,7 +35,6 @@ swiper {
 .lbls {
   display: inline-block;
   font-size: 24rpx;
-  margin-bottom: 40rpx;
 }
 
 .lbls text {
@@ -44,11 +44,15 @@ swiper {
   color: #808080;
   padding: 5rpx 10rpx;
 }
-
+.siteDetail{
+  font-size: 26rpx;
+  padding:36rpx 0;
+  border-top: 1rpx solid #f5f5f5;
+}
 .price {
   color: #ff3d3d;
   font-size: 38rpx;
-  margin-top: 10rpx;
+  padding: 25rpx 0;
 }
 
 .price text {
@@ -72,7 +76,7 @@ swiper {
 .right {
   position: absolute;
   top: 30rpx;
-  right: -100rpx;
+  right:46rpx;
 }
 
 .rightLogo {
@@ -124,6 +128,49 @@ swiper {
   visibility: hidden;
 }
 
+/* 主体部份公共部份 */
+
+/* 主体部份的选项卡 */
+
+.main .mainTitle {
+  padding: 0 60rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .active {
+  color: orange;
+}
+
+.main .mainTitle .titles .titlesImg {
+  height: 28rpx;
+  width: 28rpx;
+  margin-right: 20rpx;
+}
+
+.main .mainTitle .titles .titleText {
+  font-size: 28rpx;
+  line-height: 108rpx;
+  height: 108rpx;
+}
+
+/* 详情 */
+
+.main .mainOption {
+  padding: 0 24rpx;
+  text-align: center;
+}
+
+.main .mainOption .optionText {
+  font-size: 35rpx;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 22rpx;
+}
+
+.main .mainOption .mainOptionImg {
+  width: 700rpx;
+}
 
 /* 猜你喜欢的公共部份 */
 
@@ -174,7 +221,25 @@ swiper {
   height: 230rpx;
   border-radius: 15rpx;
 }
+.boxTit {
+  padding: 35rpx 25rpx 0 25rpx;
+  overflow: hidden;
+  background: #fff;
+}
 
+.boxTit .ico {
+  float: left;
+  width: 38rpx;
+}
+
+.boxTit .tit {
+  float: left;
+  line-height: 38rpx;
+  font-size: 36rpx;
+  color: #1a1a1a;
+  margin-left: 10rpx;
+  font-weight: 700;
+}
 .boxList .list .tit {
   color: #333;
   font-size: 30rpx;
@@ -302,4 +367,9 @@ swiper {
   position: fixed;
   right: 36rpx;
   bottom: 240rpx;
+}
+.ell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

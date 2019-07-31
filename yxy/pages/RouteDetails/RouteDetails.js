@@ -1,4 +1,5 @@
 // pages/RouteDetails/RouteDetails.js
+const app = getApp();
 Page({
 
   /**
@@ -15,16 +16,15 @@ Page({
     interval: 5000,
     duration: 1000,
   },
-
+  //回到顶部
+  goTop: function (e) {  // 一键回到顶部
+    app.goTop();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // wx.setNavigationBarTitle({
-    //   title: ""
-    // })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

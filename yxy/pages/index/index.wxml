@@ -224,8 +224,8 @@
   <view class='boxBlock'>
     <view class="boxTit">
       <image src="../../images/ico8.png" mode="widthFix" class="ico" />
-      <text class="tit">景点门票</text>
-      <navigator class="more">更多
+      <text class="tit">酒店</text>
+      <navigator class="more" bindtap="onhotelDetails">更多
         <text class='arrow'></text>
       </navigator>
     </view>

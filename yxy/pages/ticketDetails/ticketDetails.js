@@ -1,4 +1,5 @@
-// pages/index/index.js
+// pages/RouteDetails/RouteDetails.js
+const app = getApp();
 Page({
 
   /**
@@ -14,16 +15,18 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-
-    showSearch: false,
-    showEr:false
   },
-
+  //回到顶部
+  goTop: function (e) {  // 一键回到顶部
+    app.goTop();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.setNavigationBarTitle({
+    //   title: ""
+    // })
   },
 
   /**
@@ -33,37 +36,6 @@ Page({
 
   },
 
-  // 搜索框
-  bindSearch: function () {
-    this.setData({
-      showSearch: true
-    })
-  },
-
-  // 二维码
-  binEr: function () {
-    this.setData({
-      showEr: true
-    })
-  },
-
-  // 关闭二维码
-  btClose: function () {
-    this.setData({
-      showEr: false
-    })
-  },
-  // 点击更多跳转
-  onclickPath(){
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
-  },
-  onhotelDetails() {
-    wx.navigateTo({
-      url: '/pages/hotelDetails/hotelDetails',
-    })
-  },
   /**
    * 生命周期函数--监听页面显示
    */

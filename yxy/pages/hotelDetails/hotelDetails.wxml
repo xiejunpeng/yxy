@@ -38,56 +38,49 @@
     </view>
   </view>
 </view>
-<!-- 套餐类型 -->
-<view class="tickType">
-  <view class="tick_type">
-    <view class="typeTitl">
-      <text>套餐类型</text>
+<!-- 入住时间 -->
+<view class="selectTime">
+  <view class="selectTimeI">
+    <text class="timeI" style="padding-left:20rpx">入住</text>
+    <text class="timeO">选择时间</text>
+    <viwe class="hr"></viwe>
+    <view class="night">
+
+      <view class="nightTtext">
+        0晚
+      </view>
     </view>
-    <view class="change">
-      <text class="ticket_name">艾尔利滩出发</text>
-      <image class="type_img" src="../images/check_logo.png"></image>
-    </view>
+    <text class="timeI">离店</text>
+    <text class="timeO">选择时间</text>
   </view>
-  <view class="tick_type">
-    <view class="typeTitl" style=" display: inline-block">
-      <text>套餐类型</text>
-    </view>
-    <text class="oText">请选择时间</text>
-    <navigator class="more">更多
-      <image class="moreImg" src="../images/微信图片_20190729221352_r2_c2.jpg"></image>
-    </navigator>
-    <view class="date">
-      <view class="dates" style="border: 1rpx solid orange">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
+
+</view>
+<!-- 房间类型 -->
+<view class="tick_type">
+  <view class="style_font">房间类型</view>
+  <view class="data_ticket">
+    <view class="data_box">
+      <view class="data_left">
+        <view class="data_leftImg">
+          <image src="../images/hotel_style.jpg"></image>
         </view>
+        <view class="img_num">2</view>
+
       </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
-        </view>
+      <view class="data_center">
+        <view class="data_name">丽思阁</view>
+        <view class="annotation">60平米 可住2人</view>
+        <view class="check_detail">查看详情 ></view>
       </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
-        </view>
-      </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
-        </view>
+      <view class="change">
+        <text class="ticket_name">购买</text>
+        <image class="type_img" src="../images/check_logo.png"></image>
       </view>
     </view>
   </view>
+</view>
+<view class="businesses">
+
 </view>
 <!-- 主体详情 -->
 <view class="main">
@@ -97,7 +90,7 @@
       <text class="titleText active">图文详情</text>
     </view>
     <view class="titles">
-      <text class="titleText">行程信息</text>
+      <text class="titleText">洒店设施</text>
     </view>
     <view class="titles">
       <text class="titleText">预订须知</text>
@@ -113,21 +106,7 @@
   </view>
   <view class="mainOption">
     <view class="optionText">
-      行程信息
-    </view>
-    <view class="">
-      <ul>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-      </ul>
-
+      酒店设施
     </view>
     <view>
       <image class="mainOptionImg" src="../images/poster.jpg"></image>
@@ -135,7 +114,7 @@
   </view>
   <view class="mainOption">
     <view class="optionText">
-      预订须知
+      预订须知 
     </view>
     <view>
       <image class="mainOptionImg" src="../images/poster.jpg"></image>

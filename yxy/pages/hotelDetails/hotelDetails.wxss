@@ -1,0 +1,167 @@
+@import "../../public/public.wxss";
+
+/* 入住时间  */
+
+.selectTime {
+  padding-top: 25rpx;
+  padding-bottom: 20rpx;
+  margin: 0rpx 10rpx;
+  position: relative;
+}
+
+.selectTime .selectTimeI .night {
+  display: inline-block;
+  border: 1rpx solid #f7860c;
+  background-color: #fff;
+  border-radius: 30rpx;
+  color: #f7860c;
+  z-index: 1;
+  padding: 0 20rpx;
+  position: relative;
+  height: 40rpx;
+  margin: 0 60rpx 0 20rpx;
+}
+
+.hr {
+  position: absolute;
+  width: 126rpx;
+  height: 1rpx;
+  background-color: #f7860c;
+  top: 52rpx;
+  left: 290rpx;
+}
+
+.selectTime .selectTimeI .night .nightTtext {
+  font-size: 28rpx;
+  height: 20rpx;
+  vertical-align: 10rpx;
+  z-index: 3;
+}
+
+.selectTime .selectTimeI .timeI {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 700;
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.selectTime .selectTimeI .timeO {
+  font-size: 26rpx;
+  padding: 7rpx 16rpx;
+  border: 1px solid #f0f0f0;
+  color: #f0f0f0;
+  border-radius: 6rpx;
+  margin-right: 40rpx;
+}
+
+/* 房间类型 */
+
+.tick_type {
+  padding: 25rpx 22rpx 0 22rpx;
+  border-top: 1rpx solid #f9f9f9;
+}
+
+.tick_type .style_font {
+  line-height: 38rpx;
+  font-size: 36rpx;
+  color: #1a1a1a;
+  margin-left: 10rpx;
+  font-weight: 700;
+}
+
+.data_leftImg {
+  padding-right: 26rpx;
+  position: relative;
+  display: inline-block;
+}
+
+.data_leftImg >image {
+  width: 144rpx;
+  height: 144rpx;
+}
+
+.data_box {
+  padding-top: 30rpx;
+}
+
+.data_left {
+  position: relative;
+  display: inline-block;
+}
+
+.img_num {
+  position: absolute;
+  bottom: 12rpx;
+  left: 95rpx;
+  background-color: rgba(127, 127, 127, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20rpx;
+  text-align: center;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.data_center {
+  display: inline-block;
+}
+
+.data_center .data_name {
+  color: #333;
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+  line-height: 1.2em;
+  width: 132rpx;
+  height: 40rpx;
+  overflow: hidden;
+}
+
+.data_center .annotation {
+  font-size: 24rpx;
+  padding-bottom: 18rpx;
+  color: #808080;
+}
+
+.data_center .check_detail {
+  color: #f7860c;
+  font-size: 30rpx;
+}
+
+.type_img {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  padding-right: 20rpx;
+  position: relative;
+  top: 8rpx;
+}
+
+.change {
+  border: 2rpx solid #ca9756;
+  border-radius: 8rpx;
+  display: inline-block;
+  height: 70rpx;
+  background: #fef5f0;
+  margin-bottom: 30rpx;
+  position: relative;
+  top: -53rpx;
+  right: -118rpx;
+}
+
+.ticket_name {
+  font-size: 28rpx;
+  line-height: 70rpx;
+  padding: 0 20rpx;
+}
+
+.businesses {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  height: 80rpx;
+  border-top:10rpx solid #f5f5f5;
+  border-bottom:10rpx solid #f5f5f5;
+}

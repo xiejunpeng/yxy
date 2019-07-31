@@ -18,7 +18,10 @@
     "pages/verify_phone/verify_phone",
     "pages/my/fans/fans",
     "pages/my/fans2/fans2",
-    "pages/RouteDetails/RouteDetails"
+    "pages/RouteDetails/RouteDetails",
+    "pages/hotelDetails/hotelDetails",
+    "pages/ticketDetails/ticketDetails",
+    "pages/view_order/view_order"
   ],
   "window": {
     "backgroundTextStyle": "light",

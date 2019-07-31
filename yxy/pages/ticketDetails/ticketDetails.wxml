@@ -38,56 +38,50 @@
     </view>
   </view>
 </view>
-<!-- 套餐类型 -->
-<view class="tickType">
-  <view class="tick_type">
-    <view class="typeTitl">
-      <text>套餐类型</text>
+<!-- 房间类型 -->
+<view class="tick_type">
+  <view class="style_font">房间类型</view>
+  <view class="data_ticket">
+    <view class="data_box">
+      <view class="change">
+        <text class="ticket_name">门票</text>
+        <image class="type_img" src="../images/check_logo.png"></image>
+      </view>
+      <view class="change">
+        <text class="ticket_name">成人</text>
+        <image class="type_img" src="../images/check_logo.png"></image>
+      </view>
     </view>
-    <view class="change">
-      <text class="ticket_name">艾尔利滩出发</text>
-      <image class="type_img" src="../images/check_logo.png"></image>
-    </view>
-  </view>
-  <view class="tick_type">
-    <view class="typeTitl" style=" display: inline-block">
-      <text>套餐类型</text>
-    </view>
-    <text class="oText">请选择时间</text>
-    <navigator class="more">更多
-      <image class="moreImg" src="../images/微信图片_20190729221352_r2_c2.jpg"></image>
-    </navigator>
-    <view class="date">
-      <view class="dates" style="border: 1rpx solid orange">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
+    <view class="buy">
+      <text class="buychild">儿童票</text>
+      <view class='price02' style="font-size: 26rpx;">¥
+        <text style="font-size: 26rpx;margin-right:0rpx;">0</text>
+        <text class="qi" style="padding">起</text>
+      </view>
+      <view class="change02">
+        <view class="box">
+          <text>购买</text>
+          <image class="type_img" src="../images/check_logo.png"></image>
         </view>
       </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
-        </view>
+    </view>
+    <view class="buy">
+      <text class="buychild">成人票</text>
+      <view class='price02' style="font-size: 26rpx;">¥
+        <text style="font-size: 26rpx;margin-right:0rpx;">0</text>
+        <text class="qi" style="padding">起</text>
       </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
-        </view>
-      </view>
-      <view class="dates">
-        <text class="datesTest">08-04</text>
-        <view class="dateItem">
-          <text class="qian">¥</text>
-          <text>75</text>
+      <view class="change02">
+        <view class="box">
+          <text>购买</text>
+          <image class="type_img" src="../images/check_logo.png"></image>
         </view>
       </view>
     </view>
   </view>
+</view>
+<view class="businesses">
+
 </view>
 <!-- 主体详情 -->
 <view class="main">
@@ -97,7 +91,7 @@
       <text class="titleText active">图文详情</text>
     </view>
     <view class="titles">
-      <text class="titleText">行程信息</text>
+      <text class="titleText">洒店设施</text>
     </view>
     <view class="titles">
       <text class="titleText">预订须知</text>
@@ -113,21 +107,7 @@
   </view>
   <view class="mainOption">
     <view class="optionText">
-      行程信息
-    </view>
-    <view class="">
-      <ul>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-      </ul>
-
+      酒店设施
     </view>
     <view>
       <image class="mainOptionImg" src="../images/poster.jpg"></image>

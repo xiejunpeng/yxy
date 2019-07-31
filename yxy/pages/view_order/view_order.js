@@ -1,22 +1,11 @@
-// pages/index/index.js
+// pages/view_order/view_order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../images/1.jpg',
-      '../../images/1.jpg',
-      '../../images/1.jpg'
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
 
-    showSearch: false,
-    showEr:false
   },
 
   /**
@@ -33,37 +22,6 @@ Page({
 
   },
 
-  // 搜索框
-  bindSearch: function () {
-    this.setData({
-      showSearch: true
-    })
-  },
-
-  // 二维码
-  binEr: function () {
-    this.setData({
-      showEr: true
-    })
-  },
-
-  // 关闭二维码
-  btClose: function () {
-    this.setData({
-      showEr: false
-    })
-  },
-  // 点击更多跳转
-  onclickPath(){
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
-  },
-  onhotelDetails() {
-    wx.navigateTo({
-      url: '/pages/hotelDetails/hotelDetails',
-    })
-  },
   /**
    * 生命周期函数--监听页面显示
    */
