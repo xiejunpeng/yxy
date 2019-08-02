@@ -11,15 +11,15 @@
   <view class="bg">
   </view>
   <!-- <view class="mainFu"> -->
-    <view class="h_Title ell">
-      【咨询有礼】圣灵群岛哈迪大堡礁游船一日游 (艾尔利滩/汉密尔顿岛/白日梦岛出发)
-    </view>
-    <view class="date_select ">
+  <view class="h_Title ell">
+    【咨询有礼】圣灵群岛哈迪大堡礁游船一日游 (艾尔利滩/汉密尔顿岛/白日梦岛出发)
+  </view>
+  <view class="date_select ">
 
-      <!-- 房间类型 -->
-      <view class="tick_type box_shad">
-        <view class="style_font">房间类型</view>
-        <view class="data_ticket">
+    <!-- 房间类型 -->
+    <view class="tick_type box_shad">
+
+      <!-- <view class="data_ticket">
           <view class="data_box">
             <view class="change">
               <text class="ticket_name">门票</text>
@@ -56,35 +56,72 @@
               </view>
             </view>
           </view>
-        </view>
-        <!-- 出游时间 -->
-        <view class="selectTime">
-          <view class="selectTimeI">
-            <text class="timeI">出游</text>
-            <text class="timeO">选择时间</text>
-          </view>
+        </view> -->
+      <!-- 出游时间 -->
+      <view class="selectTime">
+        <view class="selectTimeI">
+          <text class="timeI">入住</text>
+          <text class="timeO">选择时间</text>
+          <view class="night">
 
-        </view>
-        <!-- 门票数量 -->
-        <view class="ticket_n">
-          <text class="number_name">门票数量</text>
-          <view class="add_sub">
-            <image class="add" src="../images/-.png"></image>
-            <text>0</text>
-            <image class="sub" src="../images/+.png"></image>
+            <view class="nightTtext">
+              0晚
+            </view>
           </view>
+          <text class="timeI"style="margin-left:16rpx">离店</text>
+          <text class="timeO">选择时间</text>
+           <viwe class="hr"></viwe>
+        </view>
+
+      </view>
+      <!-- 门票数量 -->
+      <view class="ticket_n">
+        <text class="number_name">门票数量</text>
+        <view class="add_sub">
+          <image class="add" src="../images/-.png"></image>
+          <text>0</text>
+          <image class="sub" src="../images/+.png"></image>
         </view>
       </view>
+      <!-- 房间类型 -->
+<view class="tick_type">
+  <view class="style_font">房间类型</view>
+  <view class="data_ticket">
+    <view class="data_box">
+      <view class="data_left">
+        <view class="data_leftImg">
+          <image src="../images/hotel_style.jpg"></image>
+        </view>
+        <view class="img_num">2</view>
+
+      </view>
+      <view class="data_center">
+        <view class="data_name">丽思阁</view>
+        <view class="annotation">60平米 可住2人</view>
+        <view class="check_detail">查看详情 ></view>
+      </view>
+       <view class='price_order'>¥
+          <text>2580</text>
+          <text class="qi">起</text>
+        </view>
+      <!-- <view class="change">
+        <text class="ticket_name">购买</text>
+        <image class="type_img" src="../images/check_logo.png"></image>
+      </view> -->
     </view>
-    <view class="visitor_info " style="padding:22rpx 24rpx">
+  </view>
+</view>
+    </view>
+  </view>
+  <view class="visitor_info " style="padding:22rpx 24rpx">
     <!-- 游客信息 -->
-      <!-- <view class="contentCom .box_shad">
+    <!-- <view class="contentCom .box_shad">
         <text>游客信息</text>
         <text>需要</text>
         <text>1位</text>
         <text>联系人信息，便于确认身份</text>
       </view> -->
-    </view>
+  </view>
   <!-- </view> -->
 
   <!-- 联系人公共部份 -->

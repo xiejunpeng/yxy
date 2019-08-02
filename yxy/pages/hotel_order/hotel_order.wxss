@@ -71,8 +71,8 @@
   line-height: 38rpx;
   font-size: 36rpx;
   color: #1a1a1a;
-  margin-left: 10rpx;
   font-weight: 700;
+  padding-bottom: 20rpx;
 }
 
 .data_leftImg {
@@ -87,7 +87,7 @@
 }
 
 .data_box {
-  padding-top: 30rpx;
+  padding: 30rpx 0;
 }
 
 .data_left {
@@ -111,6 +111,7 @@
 
 .data_center {
   display: inline-block;
+  margin-right: 66rpx;
 }
 
 .data_center .data_name {
@@ -257,7 +258,7 @@
   padding: 0 20rpx;
   position: relative;
   height: 40rpx;
-  margin: 0 60rpx 0 20rpx;
+  margin: 0 20rpx 0 34rpx;
 }
 
 .hr {
@@ -266,7 +267,7 @@
   height: 1rpx;
   background-color: #f7860c;
   top: 52rpx;
-  left: 290rpx;
+  left: 243rpx;
 }
 
 .selectTime .selectTimeI .night .nightTtext {
@@ -290,7 +291,6 @@
   border: 1px solid #f0f0f0;
   color: #f0f0f0;
   border-radius: 6rpx;
-  margin-right: 40rpx;
 }
 
 /* 门票数量 */
@@ -479,4 +479,35 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-top:150rpx;
+}
+/* 价钱 */
+.price_order {
+  color: #ff3d3d;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  display: inline-block;
+  position: relative;
+  top: -53rpx;
+}
+
+.price_order .qi {
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #4d4d4d;
+}
+
+.price_order text {
+  font-size: 36rpx;
+  margin-left: 5rpx;
+}
+
+.price_order .activity {
+  float: right;
+  display: block;
+  border: solid 1rpx #06b2b6;
+  color: #06b2b6;
+  font-size: 26rpx;
+  line-height: 28rpx;
+  padding: 5rpx 8rpx;
+  margin-top: 2rpx;
 }

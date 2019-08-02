@@ -142,7 +142,9 @@
   position: relative;
   top: 8rpx;
 }
+
 /* 橙色 */
+
 .change {
   border: 2rpx solid #ca9756;
   border-radius: 8rpx;
@@ -153,17 +155,19 @@
   position: relative;
   margin-right: 20rpx;
 }
+
 /* 灰色 */
-.changeGray{
-  border: 2rpx solid #E6E6E6;
+
+.changeGray {
+  border: 2rpx solid #e6e6e6;
   border-radius: 8rpx;
   display: inline-block;
-  /* height: 70rpx; */
-  /* background: #fef5f0; */
+  /* height: 70rpx; *//* background: #fef5f0; */
   margin-bottom: 30rpx;
   position: relative;
   margin-right: 20rpx;
 }
+
 .ticket_name {
   font-size: 28rpx;
   line-height: 60rpx;
@@ -348,6 +352,7 @@
 
 .visitor_info {
   padding: 0 30rpx;
+  margin-bottom: 30rpx;
 }
 
 .visitor_info .contentCom {
@@ -478,5 +483,77 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-top:150rpx;
+  padding-top: 150rpx;
+}
+
+/* 保障号 */
+
+.data {
+  border-radius: 30rpx;
+  /* padding: 0 24rpx; */
+  border: 1px solid #F7F7F7;
+  width: 636rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 30rpx;
+  padding:0 24rpx;
+}
+
+.data_title {
+  font-size: 26rpx;
+  color: #1a1a1a;
+  line-height: 140rpx;
+  font-weight: 600;
+  border-bottom: 2rpx solid #F7F7F7;
+}
+
+.safeguard {
+  width: 100%;
+  height: 115rpx;
+  border-bottom: 1rpx solid #F7F7F7;
+  padding-top:14rpx;
+}
+
+.safeguard_l {
+  width: 245rpx;
+  float: left;
+  margin-right: 240rpx;
+}
+
+.safeguard_l01 {
+  color: #333;
+  font-size: 26rpx;
+}
+
+.safeguard_l02 {
+  color: #999;
+  font-size: 20rpx;
+  line-height: 24rpx;
+  height: 20rpx;
+  position: relative;
+  top: 32rpx;
+  left: -220rpx;
+}
+
+.safeguard_l01, .safeguard_l02 {
+  display: inline-block;
+}
+
+.safeguard_l_l {
+  color: #ff3d3d;
+  font-size: 20rpx;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.safeguard_r_r {
+  display: inline-block;
+  margin-left: 18rpx;
+}
+
+.safeguard_r {
+  float: right;
+  position: relative;
+  top: -24rpx;
 }

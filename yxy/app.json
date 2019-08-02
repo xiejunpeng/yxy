@@ -21,7 +21,9 @@
     "pages/RouteDetails/RouteDetails",
     "pages/hotelDetails/hotelDetails",
     "pages/ticketDetails/ticketDetails",
-    "pages/view_order/view_order"
+    "pages/view_order/view_order",
+    "pages/hotel_order/hotel_order",
+    "pages/line_order/line_order"
   ],
   "window": {
     "backgroundTextStyle": "light",

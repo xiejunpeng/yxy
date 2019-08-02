@@ -224,7 +224,7 @@ swiper {
   padding: 5rpx 10rpx;
   margin-right: 5rpx;
 }
-
+/* 价钱 */
 .boxList .list .price {
   color: #ff3d3d;
   font-size: 30rpx;
