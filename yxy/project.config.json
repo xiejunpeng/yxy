@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -87,6 +87,13 @@
 					"id": -1,
 					"name": "pages/line_order/line_order",
 					"pathName": "pages/line_order/line_order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mask_hotel/mask_hotel",
+					"pathName": "pages/mask_hotel/mask_hotel",
 					"scene": null
 				}
 			]

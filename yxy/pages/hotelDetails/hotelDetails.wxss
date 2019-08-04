@@ -223,7 +223,7 @@
   font-size: 30rpx;
   top: 10rpx;
   position: relative;
-  left:-33rpx;
+  left: -33rpx;
 }
 
 .btn {
@@ -236,25 +236,128 @@
   outline: none;
   position: absolute;
   right: -70rpx;
-  top:9rpx;
+  top: 9rpx;
   color: #fff;
 }
-.btn02{
-  margin-top:120rpx;
+
+.btn02 {
+  margin-top: 120rpx;
   width: 580rpx;
   position: relative;
   left: -70rpx;
 }
-.btnText{
+
+.btnText {
   font-size: 26rpx;
-  color:#00a0e9;
+  color: #00a0e9;
   position: relative;
-  top:22rpx;
-  left:272rpx;
+  top: 22rpx;
+  left: 272rpx;
 }
-.isRuleShow{
-    display: block;
+
+.isRuleShow {
+  display: block;
 }
-.isRuleHide{
-    display: none;
+
+.isRuleHide {
+  display: none;
+}
+.isRuleShow01 {
+  display: block;
+}
+
+.isRuleHide01 {
+  display: none;
+}
+
+/* 点击查看详情 */
+
+.pop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 127, 127, 0.6);
+  position: fixed;
+  z-index: 110;
+  bottom: 0;
+}
+
+.pop .pop-up {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 60%;
+  overflow: scroll;
+  padding-bottom: 200rpx;
+}
+
+.pop >.pop-up> .house_box {
+  margin-top:55rpx;
+  padding: 0 134rpx;
+}
+
+.verify_titleTop {
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffff;
+}
+
+.verify_titleTop text {
+  font-size: 40rpx;
+  line-height: 110rpx;
+  height: 110rpx;
+}
+
+.verify_title_img {
+  width: 45rpx;
+  height: 45rpx;
+  background: #fff;
+  position: absolute;
+  top: 35rpx;
+  right: 50rpx;
+}
+
+.room_part {
+  margin-top: 60rpx;
+  padding: 0 30rpx;
+}
+
+.room_part .type_info {
+  font-size: 30rpx;
+}
+
+.room_part .room_info {
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.room_part .room_info .li {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20rpx;
+  width: 50%;
+  font-size: 26rpx;
+}
+
+.room_part .room_info .li .left {
+  margin-right: 20rpx;
+  color: #808080;
+}
+
+.room_part .room_info .li .li_right {
+  flex: 1;
+  text-align: left;
+  color: #333;
+}
+
+.room_part .room_part_text {
+  margin-top: 20rpx;
+  text-indent: 2em;
+  font-size: 30rpx;
+  color: #808080;
 }

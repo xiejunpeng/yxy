@@ -1,9 +1,9 @@
-<view class="hotelDetails" >
+<view class="hotelDetails">
   <!-- 头部公共部份 -->
   <view class="header">
     <view class="headerSwiper">
       <swiper indicator-dots="{{indicatorDots}}" circular="true" indicator-color="#f7f7f8" indicator-active-color="rgba(6,178,182,1)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{imgUrls}}" wx:key="id">
           <swiper-item>
             <image src="{{item}}" class="slide-image" style="height:420rpx" />
           </swiper-item>
@@ -71,7 +71,7 @@
         <view class="data_center">
           <view class="data_name">丽思阁</view>
           <view class="annotation">60平米 可住2人</view>
-          <view class="check_detail">查看详情 ></view>
+          <view class="check_detail" bindtap="showRule01">查看详情 ></view>
         </view>
         <view class="change">
           <text class="ticket_name">购买</text>
@@ -79,9 +79,6 @@
         </view>
       </view>
     </view>
-  </view>
-  <view class="businesses">
-
   </view>
   <!-- 主体详情 -->
   <view class="main">
@@ -216,7 +213,7 @@
       <image src="../images/kefu_logo.png"></image>
     </view>
   </view>
-  <!-- 弹窗 -->
+  <!-- 立即购买的弹窗 -->
   <view class="verify_phone {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
     <view class="bg">
       <view class="v-logo">
@@ -229,13 +226,75 @@
       <view class="v-input">
         <text>验证码</text>
         <input class="shoji" placeholder="请输入验证码" style="margin-left:24rpx"></input>
-        <button class="btn" >获取验证码</button>
+        <button class="btn">获取验证码</button>
       </view>
       <view class="last">
         <button class="btn02">提交</button>
       </view>
       <text class="btnText" bindtap='hideRule'>关闭</text>
     </view>
-
+  </view>
+  <!-- 点击查看详情弹窗 -->
+  <view class="pop {{isRuleTrue01?'isRuleShow01':'isRuleHide01'}}">
+    <view class="pop-up">
+      <view class="verify_titleTop">
+        <text>丽思阁</text>
+        <image class="verify_title_img" bindtap="hideRule01" mode="aspectFill" src="../images/close.jpg"></image>
+      </view>
+      <view class="house_box">
+        <swiper style="height:290rpx;width:480rpx;" indicator-dots="{{indicatorDots}}" indicator-color="#f7f7f8" indicator-active-color="rgba(6,178,182,1)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imgUrls}}" wx:key="id">
+            <swiper-item>
+              <image style="height:100%; width:100%" src="{{item}}" class="slide-image" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class="room_part">
+        <view class="type_info">房型信息</view>
+        <view class="room_info">
+          <view class="li">
+            <viwe class="left">早餐</viwe>
+            <viwe class="li_right">有早餐</viwe>
+          </view>
+          <view class="li">
+            <viwe class="left">楼层</viwe>
+            <viwe class="li_right">6层</viwe>
+          </view>
+          <view class="li">
+            <viwe class="left">可住</viwe>
+            <viwe class="li_right">2人</viwe>
+          </view>
+          <view class="li">
+            <viwe class="left">窗户</viwe>
+            <viwe class="li_right">有窗</viwe>
+          </view>
+          <view class="li">
+            <viwe class="left">面积</viwe>
+            <viwe class="li_right">60平方米</viwe>
+          </view>
+          <view class="li">
+            <viwe class="left">WiFi</viwe>
+            <viwe class="li_right">有</viwe>
+          </view>
+        </view>
+      </view>
+      <view class="room_part">
+        <view class="type_info">浴室</view>
+        <view class="room_part_text">
+          拖鞋、浴室化妆放大镜、24小时热水、免费洗漱用品(6样以上)、浴衣、浴缸、独立淋浴间、吹风机、洗浴间 </view>
+      </view>
+      <view class="room_part">
+        <view class="type_info">食品饮品</view>
+        <view class="room_part_text">
+          电热水壶、免费瓶装水、迷你吧、小冰箱、 </view>
+      </view>
+      <view class="room_part">
+        <view class="type_info">客房设施</view>
+        <view class="room_part_text">
+          书桌、熨衣设备、多种规格电源插座、110V电压插座、房内保险箱、空调、衣柜/衣橱、闹钟、针线包、22
+        </view>
+      </view>
+    </view>
   </view>
 </view>

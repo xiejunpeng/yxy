@@ -20,6 +20,19 @@ Page({
   goTop: function(e) { // 一键回到顶部
     app.goTop();
   },
+  //查看详情
+  showRule01: function() {
+    console.log(1),
+    this.setData({
+      isRuleTrue01: true
+    })
+  },
+  // 查看详情
+  hideRule01: function() {
+    this.setData({
+      isRuleTrue01: false,
+    })
+  },
   //弹窗打开规则提示
   showRule: function() {
     console.log("show")

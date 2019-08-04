@@ -12,7 +12,7 @@
   </view>
   <!-- <view class="mainFu"> -->
   <view class="h_Title ell">
-    【咨询有礼】圣灵群岛哈迪大堡礁游船一日游 (艾尔利滩/汉密尔顿岛/白日梦岛出发)
+    广州长隆香江酒店
   </view>
   <view class="date_select ">
 
@@ -58,7 +58,7 @@
           </view>
         </view> -->
       <!-- 出游时间 -->
-      <view class="selectTime">
+      <!-- <view class="selectTime">
         <view class="selectTimeI">
           <text class="timeI">入住</text>
           <text class="timeO">选择时间</text>
@@ -73,44 +73,69 @@
            <viwe class="hr"></viwe>
         </view>
 
+      </view> -->
+      <!-- 2019/8/2修改 -->
+      <view class="data_info clearfix">
+        <view class="data_info_t">
+          <text style="margin-right:40rpx;">标准双床房标准标准双床房标准标准双床房标准标准双床房标准</text>
+          <text style="margin-right:12rpx">|</text>
+          <text>20平米</text>
+          <text style="margin:0 12rpx">|</text>
+          <text>可住2人</text>
+        </view>
+        <view class="data_info_b clearfix">
+          <view class="info_l">
+            <view class="info_l_t">
+              <image class="images01" src="../images/修改酒店订单页_01.jpg"></image>
+              <text>入住</text>
+              <text>08月01日</text>
+              <text>今天</text>
+            </view>
+            <view class="info_l_b ">
+              <text>离店                        </text>
+              <text>08月02日</text>
+              <text>周五</text>
+            </view>
+          </view>
+          <view class="info_r">
+            <image class="images02" src="../images/修改酒店订单页02.jpg"></image>
+            <text class="info_rText" style="color: #999999;">共住1晚</text>
+          </view>
+        </view>
       </view>
       <!-- 门票数量 -->
-      <view class="ticket_n">
+      <!-- <view class="ticket_n">
         <text class="number_name">门票数量</text>
         <view class="add_sub">
           <image class="add" src="../images/-.png"></image>
           <text>0</text>
           <image class="sub" src="../images/+.png"></image>
         </view>
-      </view>
-      <!-- 房间类型 -->
-<view class="tick_type">
-  <view class="style_font">房间类型</view>
-  <view class="data_ticket">
-    <view class="data_box">
-      <view class="data_left">
-        <view class="data_leftImg">
-          <image src="../images/hotel_style.jpg"></image>
-        </view>
-        <view class="img_num">2</view>
-
-      </view>
-      <view class="data_center">
-        <view class="data_name">丽思阁</view>
-        <view class="annotation">60平米 可住2人</view>
-        <view class="check_detail">查看详情 ></view>
-      </view>
-       <view class='price_order'>¥
-          <text>2580</text>
-          <text class="qi">起</text>
-        </view>
-      <!-- <view class="change">
-        <text class="ticket_name">购买</text>
-        <image class="type_img" src="../images/check_logo.png"></image>
       </view> -->
-    </view>
-  </view>
-</view>
+      <!-- 房间类型 -->
+      <!-- <view class="tick_type">
+        <view class="style_font">房间类型</view>
+        <view class="data_ticket">
+          <view class="data_box">
+            <view class="data_left">
+              <view class="data_leftImg">
+                <image src="../images/hotel_style.jpg"></image>
+              </view>
+              <view class="img_num">2</view>
+
+            </view>
+            <view class="data_center">
+              <view class="data_name">丽思阁</view>
+              <view class="annotation">60平米 可住2人</view>
+              <view class="check_detail">查看详情 ></view>
+            </view>
+            <view class='price_order'>¥
+              <text>2580</text>
+              <text class="qi">起</text>
+            </view>
+          </view>
+        </view>
+      </view> -->
     </view>
   </view>
   <view class="visitor_info " style="padding:22rpx 24rpx">
@@ -127,19 +152,34 @@
   <!-- 联系人公共部份 -->
   <view class="visitor_info ">
     <view class="contentCom .box_shad">
-      <text>联系人</text>
+      <text>入住信息</text>
       <text>需要</text>
       <text>1位</text>
-      <text>联系人信息，用于商家联系</text>
+      <text>入住游客信息，用于入住酒店登记</text>
+      <!-- 门票数量 -->
+      <view class="ticket_n">
+        <text class="name">房间数量</text>
+        <text style="color:red;margin-left:-292rpx;">*</text>
+        <view class="add_sub">
+          <image class="add" src="../images/-.png"></image>
+          <text>0</text>
+          <image class="sub" src="../images/+.png"></image>
+        </view>
+      </view>
       <view class="contentCom_m">
-        <text class="name">姓名</text>
+        <text class="name">游客姓名</text>
         <text style="color:red">*</text>
-        <input placeholder="请填写姓名" auto-focus/>
+        <input style="margin-left:-72rpx;" placeholder="请填写其中一位入住人姓名" auto-focus/>
       </view>
       <view class="contentCom_m">
         <text class="name">联系手机</text>
         <text style="color:red">*</text>
-        <input style="margin-left:-60rpx;top:16rpx;" placeholder="请填写手机" auto-focus/>
+        <input style="margin-left:-72rpx;top:16rpx;" placeholder="请填写手机" auto-focus/>
+      </view>
+      <view class="contentCom_m">
+        <text class="name">到店时间</text>
+        <!-- <text style="color:red">*</text> -->
+        <input style="margin-left:-60rpx;top:16rpx;" placeholder="14：00后办理入住" auto-focus/>
       </view>
     </view>
 
@@ -153,10 +193,78 @@
     <view class="footer_l">
       <view class="footer_l_box">
         <text class="price">总价</text>
-        <text class="money">￥0</text>
+        <text class="money">￥369</text>
+      </view>
+    </view>
+    <view class="footerDetail" bindtap="showRule">
+      <text style="margin-right:10rpx;">明细</text>
+      <image src="{{imgscr}}"></image>
+    </view>
+    <view class="footer_R">立即预订</view>
+  </view>
+  <!-- 弹窗 -->
+  <view class="verify_phone {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class="verify_title">
+      <view class="verify_titleTop">
+        <text>费用明细</text>
+        <image class="verify_title_img" bindtap="hideRule" mode="aspectFill" src="../images/close.jpg"></image>
+      </view>
+      <view class="item clearfix">
+        <view class="item_L">
+          <text>08月03日</text>
+          <text style="padding-left:10rpx;">房费</text>
+        </view>
+        <view class="item_R">
+          <text>¥</text>
+          <text>369.00</text>
+          <text style="padding-left:10rpx;">X1间</text>
+        </view>
+      </view>
+      <view class="item clearfix">
+        <view class="item_L">
+          <text>08月03日</text>
+          <text style="padding-left:10rpx;">房费</text>
+        </view>
+        <view class="item_R">
+          <text>¥</text>
+          <text>369.00</text>
+          <text style="padding-left:10rpx;">X1间</text>
+        </view>
+      </view>
+      <view class="item clearfix">
+        <view class="item_L">
+          <text>08月03日</text>
+          <text style="padding-left:10rpx;">房费</text>
+        </view>
+        <view class="item_R">
+          <text>¥</text>
+          <text>369.00</text>
+          <text style="padding-left:10rpx;">X1间</text>
+        </view>
+      </view>
+      <view class="item clearfix">
+        <view class="item_L">
+          <text>08月03日</text>
+          <text style="padding-left:10rpx;">房费</text>
+        </view>
+        <view class="item_R">
+          <text>¥</text>
+          <text>369.00</text>
+          <text style="padding-left:10rpx;">X1间</text>
+        </view>
+      </view>
+      <view class="item clearfix">
+        <view class="item_L">
+          <text>08月03日</text>
+          <text style="padding-left:10rpx;">房费</text>
+        </view>
+        <view class="item_R">
+          <text>¥</text>
+          <text>369.00</text>
+          <text style="padding-left:10rpx;">X1间</text>
+        </view>
       </view>
     </view>
 
-    <view class="footer_R">立即支付</view>
   </view>
 </view>
