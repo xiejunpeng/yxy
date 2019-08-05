@@ -195,8 +195,8 @@
         <image class="logo_leftImg" src="../images/back.jpg"></image>
         <text class="logo_name">首页</text>
       </view>
-      <view class="logo_left">
-        <image class="logo_leftImg" src="../images/kefu.jpg"></image>
+      <view class="logo_left" bindtap="showRule02">
+        <image class="logo_leftImg" src="../images/kefu.jpg"  ></image>
         <text class="logo_name">客服</text>
       </view>
       <view class="logo_right" bindtap='showRule' catchTap="_proInfoWindowShow">
@@ -293,6 +293,33 @@
         <view class="type_info">客房设施</view>
         <view class="room_part_text">
           书桌、熨衣设备、多种规格电源插座、110V电压插座、房内保险箱、空调、衣柜/衣橱、闹钟、针线包、22
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 客服弹窗 -->
+  <view class="contact_bg {{isRuleTrue02?'isRuleShow02':'isRuleHide02'}}">
+    <view class="cont_kefu detail la ">
+      <view class="cont_kefu_p" style="display:none">该商户暂未提供客服联系方式</view>
+      <view class="cont_kefu_body bor_b">
+        <view class="kefu_erweima">
+          <view class="cont">微信客服</view>
+          <view class="erweima">
+            <image class="img" src="http://res.yuoun.com/UploadFile/97/thumbnail/image/20190622/er.jpg"></image>
+          </view>
+          <view class="descr">扫描二维码联系客服</view>
+        </view>
+        <view class="cont">电话客服</view>
+        <view class="boda">
+            <view class="phone_number">
+              <view class="iconTel">
+                 <image  mode="aspectFill" src="../images/弹出框的电话.png"></image>
+              </view>
+              拨打电话:18620888545
+            </view>
+        </view>
+        <view class="close_but" bindtap="hideRule02">
+            <image class="close_but_img"  mode="aspectFill" src="../images/close.jpg"></image>
         </view>
       </view>
     </view>

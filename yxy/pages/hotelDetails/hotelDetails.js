@@ -20,14 +20,13 @@ Page({
   goTop: function(e) { // 一键回到顶部
     app.goTop();
   },
-  //查看详情
+  //查看详情弹窗
   showRule01: function() {
-    console.log(1),
     this.setData({
       isRuleTrue01: true
     })
   },
-  // 查看详情
+  // 查看详情弹窗
   hideRule01: function() {
     this.setData({
       isRuleTrue01: false,
@@ -35,18 +34,29 @@ Page({
   },
   //弹窗打开规则提示
   showRule: function() {
-    console.log("show")
     this.setData({
       isRuleTrue: true
     })
   },
   // 弹窗点击关闭按钮：
   hideRule: function() {
-    console.log("hide")
     this.setData({
       isRuleTrue: false,
     })
   },
+  //客服弹窗
+  showRule02: function() {
+    this.setData({
+      isRuleTrue02: true
+    })
+  },
+  // 客服弹窗
+  hideRule02: function() {
+    this.setData({
+      isRuleTrue02: false,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
