@@ -133,7 +133,7 @@ swiper {
 /* 主体部份的选项卡 */
 
 .main .mainTitle {
-  padding: 0 60rpx;
+  /* padding: 0 60rpx; */
   display: flex;
   justify-content: space-around;
 }

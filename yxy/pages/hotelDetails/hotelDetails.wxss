@@ -270,6 +270,7 @@
 .isRuleHide01 {
   display: none;
 }
+
 .isRuleShow02 {
   display: block;
 }
@@ -468,10 +469,12 @@
   right: -18rpx;
   top: -23rpx;
 }
-.boda{
+
+.boda {
   position: relative;
   left: -24rpx;
 }
+
 .phone_number .iconTel {
   /* width: 0.42667rem; */
   display: inline-block;
@@ -484,4 +487,16 @@
   width: 28rpx;
   vertical-align: middle;
   margin-right: 10rpx;
+}
+
+/* 吸顶菜单 */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  background: #fff;
+  display: flex;
+  width: 100%;
+  z-index: 10;
 }

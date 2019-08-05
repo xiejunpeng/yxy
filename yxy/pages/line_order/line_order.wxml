@@ -60,21 +60,11 @@
       </view>
     </view>
   </view>
-  <view class="visitor_info ">
-    <!-- 游客信息 -->
-    <!-- <view class="contentCom .box_shad">
-        <text>游客信息</text>
-        <text>需要</text>
-        <text>1位</text>
-        <text>联系人信息，便于确认身份</text>
-      </view> -->
-  </view>
-  <!-- </view> -->
 
-  <!-- 联系人公共部份 -->
+  <!-- 游客信息 -->
   <view class="visitor_info ">
     <view class="contentCom .box_shad">
-      <text>联系人</text>
+      <text>游客信息</text>
       <text>需要</text>
       <text>1位</text>
       <text>联系人信息，用于商家联系</text>
@@ -86,10 +76,32 @@
       <view class="contentCom_m">
         <text class="name">联系手机</text>
         <text style="color:red">*</text>
-        <input style="margin-left:-60rpx;top:16rpx;" placeholder="请填写手机" auto-focus/>
+        <input style="margin-left:-60rpx;top:16rpx;" placeholder="请填写手机号" auto-focus/>
       </view>
     </view>
-
+  </view>
+  <!-- 信息 -->
+  <view class="visitor_info ">
+    <view class="contentCom .box_shad">
+      <text>联系人</text>
+      <text>需要</text>
+      <text>1位</text>
+      <text>联系人信息，用于商家联系</text>
+      <view class="contentCom_m">
+        <text class="name" >游客1</text>
+        <text style="color:red">*</text>
+        <input placeholder="请填写游客姓名" style="padding-left:102rpx;" auto-focus/>
+      </view>
+      <view class="contentCom_m">
+        <text class="name">身份证号</text>
+        <text style="color:red">*</text>
+        <input style="margin-left:-68rpx;top:16rpx;" placeholder="请填写身份证号码" auto-focus/>
+      </view>
+      <view class="contentCom_m">
+        <text class="name">联系手机</text>
+        <input style="margin-left:-60rpx;top:16rpx;" placeholder="请填写手机号" auto-focus/>
+      </view>
+    </view>
   </view>
   <!-- 出行保单 -->
   <view class="">

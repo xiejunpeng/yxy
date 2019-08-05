@@ -392,9 +392,9 @@
 .visitor_info .contentCom_m input {
   display: inline-block;
   line-height: 140rpx;
-  color: #cfcfcf;
-  font-size: 26rpx;
-  padding-left: 200rpx;
+ color: #000;
+  font-size: 30rpx;
+  padding-left: 130rpx;
   position: relative;
   top: 23rpx;
 }

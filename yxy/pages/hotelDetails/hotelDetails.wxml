@@ -82,17 +82,17 @@
   </view>
   <!-- 主体详情 -->
   <view class="main">
-    <view class="mainTitle">
-      <view class="titles">
-        <image class="titlesImg" src="../images/icon13.jpg"></image>
-        <text class="titleText active">图文详情</text>
+    <view class="mainTitle {{menuFixed ? 'fixed': ''}}"   id="affix">
+      <view class="titles" wx:for="{{title}}" wx:for-index="index" wx:for-item="item" wx:key="index" >
+        <image class="titlesImg" wx:if="{{main_index==index}}" src="../images/icon13.jpg"></image>
+        <text class="titleText {{main_index==index?'active':''}}">{{item}}</text>
       </view>
-      <view class="titles">
+      <!-- <view class="titles">
         <text class="titleText">洒店设施</text>
       </view>
       <view class="titles">
         <text class="titleText">预订须知</text>
-      </view>
+      </view> -->
     </view>
     <view class="mainOption">
       <view class="optionText">
