@@ -115,19 +115,12 @@
     <view class="optionText">
       行程信息
     </view>
-    <view class="">
-      <ul>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-        <li>1234567</li>
-      </ul>
-
+    <view class="journey" wx:for="{{date_info}}" wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="numberDays">第{{item}}天：芽庄</view>
+      <view class="DaysDetails">
+          <view class="DayItem {{index==date_info.length-1?'DayItemNone':''}}" >餐饮：早餐自理 午餐自理 晚餐自理</view>
+          <view class="DayItem  {{index==date_info.length-1?'DayItemNone':''}}">餐饮：早餐自理 午餐自理 晚餐自理</view>
+      </view>
     </view>
     <view>
       <image class="mainOptionImg" src="../images/poster.jpg"></image>

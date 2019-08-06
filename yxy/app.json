@@ -30,6 +30,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "游小云",
     "navigationBarTextStyle": "black"
+    
   },
   "tabBar": {
     "color": "#b3b3b3",

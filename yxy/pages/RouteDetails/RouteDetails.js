@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    date_info:[1,2,3],
     imgUrls: [
       '../../images/1.jpg',
       '../../images/1.jpg',
