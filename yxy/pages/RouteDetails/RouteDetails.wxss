@@ -113,6 +113,33 @@ swiper {
   width: 80rpx;
 }
 
+/* like的弹窗  */
+
+.likePOP {
+  width: 400rpx;
+  background: #fff;
+  position: fixed;
+  left: 210rpx;
+  top: 700rpx;
+  z-index: 20;
+  display: flex;
+  background: #fff;
+}
+.likePOP .likeImg{
+    margin-left: 89rpx;
+    position: relative;
+    top:-11rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.likePOP .likeText {
+  font-size: 22rpx;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  position: relative;
+  top:-17rpx;
+}
+
 /* 万能清除器 */
 
 .clearfix::after {
@@ -221,7 +248,7 @@ swiper {
 /* 主体部份的选项卡 */
 
 .main .mainTitle {
-  padding: 0 60rpx;
+  /* padding: 0 60rpx; */
   display: flex;
   justify-content: space-around;
 }
@@ -499,15 +526,16 @@ swiper {
   font-weight: 700;
   display: inline-block;
   /* padding-bottom: 22rpx; */
-  padding-left:15rpx;
+  padding-left: 15rpx;
   position: relative;
 }
-.numberDays::before{
+
+.numberDays::before {
   content: "";
-  border:10rpx solid #00a0e9;
+  border: 10rpx solid #00a0e9;
   border-radius: 50%;
   position: absolute;
-  top:14rpx;
+  top: 14rpx;
   left: -7rpx;
 }
 
@@ -517,12 +545,267 @@ swiper {
   color: #666;
   padding-left: 15rpx;
   border-left: dashed #00a0e9 1px;
-  padding-top:10rpx;
+  padding-top: 10rpx;
   padding-bottom: 10rpx;
 }
- .DayItemNone{
-  border-left: dashed #fff 1px!important;
+
+.DayItemNone {
+  border-left: dashed #fff 1px !important;
 }
-.journey .DaysDetails:last-of-type{
+
+.journey .DaysDetails:last-of-type {
   border-left: none;
+}
+
+/*立即购买的弹窗 */
+
+.verify_phone {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 127, 127, 0.6);
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+}
+
+.verify_phone .bg {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  padding: 30rpx 66rpx 60rpx 66rpx;
+}
+
+.v-logo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  width: 128rpx;
+  padding-left: 260rpx;
+}
+
+.v-logo image {
+  width: 128rpx;
+  height: 128rpx;
+  display: inline-block;
+  margin: 30rpx auto 0 auto;
+}
+
+.v-input {
+  display: inline-block;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  height: 96rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  position: relative;
+}
+
+.v-input>text {
+  display: inline-block;
+  line-height: 96rpx;
+  font-size: 30rpx;
+  padding-right: 128rpx;
+}
+
+.shoji {
+  display: inline-block;
+  line-height: 96rpx;
+  font-size: 30rpx;
+  top: 10rpx;
+  position: relative;
+  left: -33rpx;
+}
+
+.btn {
+  background: #00a0e9;
+  display: inline-block;
+  font-size: 30rpx;
+  border: none;
+  border-radius: 6rpx;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: -70rpx;
+  top: 9rpx;
+  color: #fff;
+}
+
+.btn02 {
+  margin-top: 120rpx;
+  width: 580rpx;
+  position: relative;
+  left: -70rpx;
+}
+
+.btnText {
+  font-size: 26rpx;
+  color: #00a0e9;
+  position: relative;
+  top: 22rpx;
+  left: 272rpx;
+}
+
+.isRuleShow {
+  display: block;
+}
+
+.isRuleHide {
+  display: none;
+}
+
+.isRuleShow01 {
+  display: block;
+}
+
+.isRuleHide01 {
+  display: none;
+}
+
+.isRuleShow02 {
+  display: block;
+}
+
+.isRuleHide02 {
+  display: none;
+}
+
+/* like弹窗 */
+
+.isRuleShow03 {
+  display: block;
+}
+
+.isRuleHide03 {
+  display: none;
+}
+
+/* 客服弹窗 */
+
+.contact_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 127, 127, 0.6);
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+}
+
+.contact_bg .la {
+  width: 80%;
+}
+
+.detail {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 6rpx;
+}
+
+.cont_kefu {
+  background-color: #fff;
+  padding: 0px 0 80rpx;
+}
+
+.cont_kefu_p {
+  color: #808080;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.cont_kefu_body {
+  margin: 80rpx auto 0;
+  width: 440rpx;
+  padding-bottom: 40rpx;
+  text-align: center;
+}
+
+.bor_b {
+  border-bottom: 1rpx solid #fafafa;
+}
+
+.kefu_erweima {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cont {
+  font-size: 30rpx;
+  color: #333;
+  padding: 40rpx 0;
+}
+
+.erweima {
+  width: 200rpx;
+  height: 200rpx;
+  border: 2rpx solid #ebebeb;
+  margin: 0 auto;
+}
+
+.img {
+  height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.descr {
+  text-align: center;
+  font-size: 30rpx;
+  color: #808080;
+  margin-top: 10rpx;
+}
+
+.phone_number {
+  text-align: center;
+  font-size: 30rpx;
+  color: #00a0e9;
+  padding: 20rpx;
+  border: 1rpx solid #00a0e9;
+  border-radius: 40rpx;
+  margin: 0 auto;
+  width: 440rpx;
+}
+
+.close_but_img {
+  width: 54rpx;
+  height: 54rpx;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -18rpx;
+  top: -23rpx;
+}
+
+.boda {
+  position: relative;
+  left: -24rpx;
+}
+
+.phone_number .iconTel {
+  /* width: 0.42667rem; */
+  display: inline-block;
+  margin-right: 20rpx;
+  vertical-align: 1px;
+}
+
+.phone_number .iconTel > image {
+  height: 28rpx;
+  width: 28rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+/* 吸顶菜单 */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  background: #fff;
+  display: flex;
+  width: 100%;
+  z-index: 10;
 }

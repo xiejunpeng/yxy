@@ -10,7 +10,7 @@
     </swiper>
   </view>
   <view class="topLogo">
-    <image class="fl" src="../images/back.png"></image>
+    <image class="fl" bindtap="callbacks" src="../images/back.png"></image>
     <image class="fr" src="../images/unlike.png"></image>
   </view>
   <view class="headerText">
@@ -85,16 +85,10 @@
 </view>
 <!-- 主体详情 -->
 <view class="main">
-  <view class="mainTitle">
-    <view class="titles">
-      <image class="titlesImg" src="../images/icon13.jpg"></image>
-      <text class="titleText active">图文详情</text>
-    </view>
-    <view class="titles">
-      <text class="titleText">洒店设施</text>
-    </view>
-    <view class="titles">
-      <text class="titleText">预订须知</text>
+  <view class="mainTitle {{menuFixed ? 'fixed': ''}}" id="affix">
+    <view class="titles" wx:for="{{title}}" wx:for-index="index" wx:for-item="item" wx:key="index" bindtap='titleClick' data-ind="{{index}}">
+      <image class="titlesImg" wx:if="{{main_index==index}}" src="../images/icon13.jpg"></image>
+      <text class="titleText {{main_index==index?'active':''}} ">{{item}}</text>
     </view>
   </view>
   <view class="mainOption">
@@ -195,14 +189,14 @@
 <view class="order_bot">
   <view class="logo_item">
     <view class="logo_left">
-      <image class="logo_leftImg" src="../images/back.jpg"></image>
+      <image class="logo_leftImg" bindtap="backHome" src="../images/back.jpg"></image>
       <text class="logo_name">首页</text>
     </view>
     <view class="logo_left">
-      <image class="logo_leftImg" src="../images/kefu.jpg"></image>
+      <image class="logo_leftImg" src="../images/kefu.jpg" bindtap="showRule02"></image>
       <text class="logo_name">客服</text>
     </view>
-    <view class="logo_right">
+    <view class="logo_right" bindtap="showRule">
       立即购买
     </view>
   </view>
@@ -214,5 +208,53 @@
   </view>
   <view class="roof" bindtap="goTop">
     <image src="../images/kefu_logo.png"></image>
+  </view>
+</view>
+<!-- 立即购买的弹窗 -->
+<view class="verify_phone {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+  <view class="bg">
+    <view class="v-logo">
+      <image src="../images/头像_03.jpg"></image>
+    </view>
+    <view class="v-input">
+      <text>手机号码</text>
+      <input class="shoji" placeholder="请输入手机号"></input>
+    </view>
+    <view class="v-input">
+      <text>验证码</text>
+      <input class="shoji" placeholder="请输入验证码" style="margin-left:24rpx"></input>
+      <button class="btn">获取验证码</button>
+    </view>
+    <view class="last">
+      <button class="btn02">提交</button>
+    </view>
+    <text class="btnText" bindtap='hideRule'>关闭</text>
+  </view>
+</view>
+<!-- 客服弹窗 -->
+<view class="contact_bg {{isRuleTrue02?'isRuleShow02':'isRuleHide02'}}">
+  <view class="cont_kefu detail la ">
+    <view class="cont_kefu_p" style="display:none">该商户暂未提供客服联系方式</view>
+    <view class="cont_kefu_body bor_b">
+      <view class="kefu_erweima">
+        <view class="cont">微信客服</view>
+        <view class="erweima">
+          <image class="img" src="http://res.yuoun.com/UploadFile/97/thumbnail/image/20190622/er.jpg"></image>
+        </view>
+        <view class="descr">扫描二维码联系客服</view>
+      </view>
+      <view class="cont">电话客服</view>
+      <view class="boda">
+        <view class="phone_number">
+          <view class="iconTel">
+            <image mode="aspectFill" src="../images/弹出框的电话.png"></image>
+          </view>
+          拨打电话:18620888545
+        </view>
+      </view>
+      <view class="close_but" bindtap="hideRule02">
+        <image class="close_but_img" mode="aspectFill" src="../images/close.jpg"></image>
+      </view>
+    </view>
   </view>
 </view>

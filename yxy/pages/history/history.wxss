@@ -1,0 +1,120 @@
+/* 热门线路标题部份 */
+
+.newBoxBlock> .newBoxTIt {
+  padding: 35rpx 25rpx 0 25rpx;
+  overflow: hidden;
+}
+
+.newBoxBlock> .newBoxTIt .tit01 {
+  float: left;
+  line-height: 38rpx;
+  font-size: 36rpx;
+  color: #1a1a1a;
+  margin-left: 10rpx;
+}
+
+.newBoxBlock> .newBoxTIt .newmore {
+  position: relative;
+  float: right;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  color: #808080;
+  padding-right: 26rpx;
+}
+
+.newBoxBlock> .newBoxTIt .newarrow {
+  position: absolute;
+  height: 16rpx;
+  width: 16rpx;
+  border-width: 1rpx 1rpx 0 0;
+  border-color: #666;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  right: 0rpx;
+  top: 50%;
+  margin-top: -11rpx;
+}
+
+/* 热门线路公共部份 */
+
+.newBoxBlock> .newBoxList {
+  padding: 3rpx 20rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newBoxBlock> .newBoxList .newList {
+  float: left;
+  /* width: 50%; */
+  padding-top: 25rpx;
+  margin-left: 13rpx;
+  box-sizing: border-box;
+}
+.newBoxBlock> .newBoxList .newList:first-of-type{
+  margin-left: 0;
+}
+
+.newBoxBlock> .newBoxList .newList .newPic {
+  position: relative;
+  text-align: center;
+}
+
+.newBoxBlock> .newBoxList .newList .newPic .newPicText {
+  width: 100%;
+  font-size: 30rpx;
+  line-height: 68rpx;
+  height: 68rpx;
+  position: absolute;
+  top: 38%;
+  /* left: 50%; */
+  color: #FEFFFF;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4));
+  /* 标准的语法 */
+}
+
+
+.newBoxBlock> .newBoxList .newList .newimg {
+  display: block;
+  width: 228rpx;
+  height: 210rpx;
+  border-radius: 15rpx;
+}
+
+.newBoxBlock> .newBoxList .newList .tit02 {
+  color: #333;
+  font-size: 30rpx;
+  padding-top: 19rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 228rpx;
+}
+
+
+/* 价钱 */
+
+.newBoxBlock> .newBoxList .newList .newPrice {
+  color: #ff3d3d;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.newBoxBlock> .newBoxList .newList .newPrice .newqi {
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #4d4d4d;
+}
+
+.newBoxBlock> .newBoxList .newList .newPrice text {
+  font-size: 46rpx;
+  margin-left: 5rpx;
+}
+

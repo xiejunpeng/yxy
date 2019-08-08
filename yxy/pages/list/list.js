@@ -66,8 +66,14 @@ Page({
     })
   },
   onRouteDetails(){
+    // wx.navigateTo({
+    //   url: '/pages/RouteDetails/RouteDetails',
+    // })
+    // wx.navigateTo({
+    //   url: '/pages/hotelDetails/hotelDetails',
+    // })
     wx.navigateTo({
-      url: '/pages/RouteDetails/RouteDetails',
+      url: '/pages/ticketDetails/ticketDetails',
     })
   },
   /**

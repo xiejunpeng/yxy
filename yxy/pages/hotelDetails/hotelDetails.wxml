@@ -11,7 +11,7 @@
       </swiper>
     </view>
     <view class="topLogo">
-      <image class="fl" src="../images/back.png"></image>
+      <image class="fl" bindtap="callbacks"  src="../images/back.png"></image>
       <image class="fr" src="../images/unlike.png"></image>
     </view>
     <view class="headerText">
@@ -87,12 +87,6 @@
         <image class="titlesImg" wx:if="{{main_index==index}}" src="../images/icon13.jpg"></image>
         <text class="titleText {{main_index==index?'active':''}} ">{{item}}</text>
       </view>
-      <!-- <view class="titles">
-        <text class="titleText">洒店设施</text>
-      </view>
-      <view class="titles">
-        <text class="titleText">预订须知</text>
-      </view> -->
     </view>
     <view class="mainOption">
       <view class="optionText">
@@ -192,11 +186,11 @@
   <view class="order_bot">
     <view class="logo_item">
       <view class="logo_left">
-        <image class="logo_leftImg" src="../images/back.jpg"></image>
+        <image class="logo_leftImg" bindtap="backHome"  src="../images/back.jpg"></image>
         <text class="logo_name">首页</text>
       </view>
       <view class="logo_left" >
-        <image class="logo_leftImg" src="../images/kefu.jpg"  bindtap="showRule02"></image>
+        <image class="logo_leftImg" bindtap="showRule02" src="../images/kefu.jpg"></image>
         <text class="logo_name">客服</text>
       </view>
       <view class="logo_right" bindtap='showRule' catchTap="_proInfoWindowShow">

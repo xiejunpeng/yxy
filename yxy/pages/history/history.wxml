@@ -1,0 +1,43 @@
+ <view class='newBoxBlock'>
+    <view class="newBoxTIt">
+      <text class="tit01">热门线路</text>
+      <navigator class="newmore" bindtap="onclickPath">更多
+        <text class='newarrow'></text>
+      </navigator>
+    </view>
+    <view class='newBoxList'>
+      <navigator class='newList'>
+        <view class='newPic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='newimg' />
+          <view class="newPicText">线路</view>
+        </view>
+        <view class='tit02'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='newPrice'>¥
+          <text>530</text>
+          <text class="newqi">起</text>
+        </view>
+      </navigator>
+      <navigator class='newList'>
+        <view class='newPic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='newimg' />
+          <view class="newPicText">线路</view>
+        </view>
+        <view class='tit02'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='newPrice'>¥
+          <text>530</text>
+          <text class="newqi">起</text>
+        </view>
+      </navigator>
+      <navigator class='newList'>
+        <view class='newPic'>
+          <image src="../../images/1.jpg" mode='aspectFill' class='newimg' />
+          <view class="newPicText">线路</view>
+        </view>
+        <view class='tit02'>马来西亚仙本那2天1晚马来西亚仙本那2天1晚</view>
+        <view class='newPrice'>¥
+          <text>530</text>
+          <text class="newqi">起</text>
+        </view>
+      </navigator>
+    </view>
+  </view>

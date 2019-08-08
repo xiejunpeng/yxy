@@ -21,7 +21,21 @@ Page({
       "图文详情", "酒店设施", "预定须知"
     ],
     main_index: 0,
-    currentIndex:0
+    currentIndex: 0
+
+  },
+  // 返回上一页
+  callbacks() {
+    // console.log("1"),
+    wx.navigateBack({
+      delta: 2
+    })
+  },
+  // 返回首页
+  backHome() {
+    wx.navigateBack({
+      delta: 2
+    })
   },
   //回到顶部
   goTop: function(e) { // 一键回到顶部
@@ -39,13 +53,13 @@ Page({
       isRuleTrue01: false,
     })
   },
-  //弹窗打开规则提示
+  //立即购买弹窗打开规则提示
   showRule: function() {
     this.setData({
       isRuleTrue: true
     })
   },
-  // 弹窗点击关闭按钮：
+  // 立即购买弹窗点击关闭按钮：
   hideRule: function() {
     this.setData({
       isRuleTrue: false,
@@ -81,7 +95,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    var that = this;
+    var that = this; //选项卡 滑动切换 点击切换
     var query = wx.createSelectorQuery() //创建节点查询器 query
     query.select('#affix').boundingClientRect() //这段代码的意思是选择Id= the - id的节点，获取节点位置信息的查询请求
     query.exec(function(res) {
@@ -92,7 +106,7 @@ Page({
     });
 
     //
-    query.selectAll('.mainOption').boundingClientRect()  //查找节点并获取节点位置信息的查询请求
+    query.selectAll('.mainOption').boundingClientRect() //查找节点并获取节点位置信息的查询请求
     query.exec(function(res) {
       // console.log(res);
       // console.log(res[1]);
@@ -119,23 +133,23 @@ Page({
       })
     }
 
-    this.data.scroll_top > this.data.main_arr[0].top-120 ? this.setData({
+    this.data.scroll_top > this.data.main_arr[0].top - 120 ? this.setData({
       main_index: 0
     }) : ""
-    this.data.scroll_top > this.data.main_arr[1].top-120 ? this.setData({
+    this.data.scroll_top > this.data.main_arr[1].top - 120 ? this.setData({
       main_index: 1
     }) : ""
-    this.data.scroll_top > this.data.main_arr[2].top-120 ? this.setData({
+    this.data.scroll_top > this.data.main_arr[2].top - 120 ? this.setData({
       main_index: 2
     }) : ""
   },
   //用户点击tab时调用
-  titleClick: function (e) {
-      this.setData({
-        main_index: e.currentTarget.dataset.ind
-      })
+  titleClick: function(e) {
+    this.setData({
+      main_index: e.currentTarget.dataset.ind
+    })
     wx.pageScrollTo({
-      scrollTop: this.data.main_arr[this.data.main_index].top-120
+      scrollTop: this.data.main_arr[this.data.main_index].top - 120
     })
 
   },

@@ -223,6 +223,9 @@
   border-radius: 10rpx;
   position: relative;
 }
+.change02Active {
+  border: 1rpx solid orange;
+}
 
 /* .box{
   position: absolute;

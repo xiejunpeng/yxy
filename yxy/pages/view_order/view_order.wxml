@@ -21,11 +21,11 @@
         <view class="style_font">房间类型</view>
         <view class="data_ticket">
           <view class="data_box">
-            <view class="change">
+            <view class="change ">
               <text class="ticket_name">门票</text>
-              <image class="type_img" src="../images/check_on.png"></image>
+              <image class="type_img" src="../images/light_change.png"></image>
             </view>
-            <view class="changeGray">
+            <view class="changeGray" >
               <text class="ticket_name">成人</text>
               <image class="type_img" src="../images/change.jpg"></image>
             </view>
@@ -36,10 +36,10 @@
               <text style="font-size: 26rpx;margin-right:0rpx;">0</text>
               <text class="qi" style="padding">起</text>
             </view>
-            <view class="change02">
+            <view class="change02 {{0 == currentIndex? 'change02Active':''}}" bindtap="change02" data-idx='0'>
               <view class="box">
                 <text>购买</text>
-                <image class="type_img" src="../images/change.jpg"></image>
+                <image class="type_img" src="{{0 == currentIndex?'../images/light_change.png':'../images/change.jpg'}}"></image>
               </view>
             </view>
           </view>
@@ -49,10 +49,10 @@
               <text style="font-size: 26rpx;margin-right:0rpx;">0</text>
               <text class="qi" style="padding">起</text>
             </view>
-            <view class="change02">
+            <view class="change02 {{1 == currentIndex? 'change02Active':''}}" bindtap="change02" data-idx='1'>
               <view class="box">
                 <text>购买</text>
-                <image class="type_img" src="../images/change.jpg"></image>
+                <image class="type_img" src="{{1 == currentIndex?'../images/light_change.png':'../images/change.jpg'}}"></image>
               </view>
             </view>
           </view>

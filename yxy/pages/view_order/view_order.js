@@ -5,9 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    change02Active:false,
+    currentIndex: 0,
   },
-
+  change02(e){
+    console.log(e)
+    this.setData({
+      //拿到当前索引并动态改变
+      currentIndex: e.currentTarget.dataset.idx
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
