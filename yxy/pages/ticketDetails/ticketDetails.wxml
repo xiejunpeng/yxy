@@ -211,14 +211,14 @@
   </view>
 </view>
 <!-- 立即购买的弹窗 -->
-<view class="verify_phone {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+<view class="verify_phone {{isRuleTrue?'isRuleShow':'isRuleHide'}}" style="display:block">
   <view class="bg">
     <view class="v-logo">
       <image src="../images/头像_03.jpg"></image>
     </view>
     <view class="v-input">
       <text>手机号码</text>
-      <input class="shoji" placeholder="请输入手机号"></input>
+      <input class="shoji" placeholder="请输入手机号"  type="number"></input>
     </view>
     <view class="v-input">
       <text>验证码</text>

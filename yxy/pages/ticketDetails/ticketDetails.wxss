@@ -366,9 +366,9 @@
   display: inline-block;
   margin: 30rpx auto 0 auto;
 }
-
+/*==============================修改弹窗 手机  验证码  输入框 ============================== */
 .v-input {
-  display: inline-block;
+  /* display: inline-block; */
   box-sizing: border-box;
   /* overflow: hidden; */
   height: 96rpx;
@@ -381,16 +381,18 @@
   display: inline-block;
   line-height: 96rpx;
   font-size: 30rpx;
-  padding-right: 128rpx;
+  padding-right: 60rpx;
 }
 
 .shoji {
   display: inline-block;
   line-height: 96rpx;
   font-size: 30rpx;
-  top: 10rpx;
+  top: 15rpx;
   position: relative;
-  left: -33rpx;
+  /* left: -33rpx; */
+  width: 200rpx;
+  margin-right: 20rpx;
 }
 
 .btn {
@@ -402,11 +404,11 @@
   cursor: pointer;
   outline: none;
   position: absolute;
-  right: -70rpx;
+  /* right: -70rpx; */
   top: 9rpx;
   color: #fff;
 }
-
+/*==============================修改弹窗 手机  验证码  输入框 ============================== */
 .btn02 {
   margin-top: 120rpx;
   width: 580rpx;

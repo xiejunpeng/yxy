@@ -251,7 +251,7 @@
   </view>
 </view>
 <!-- 客服弹窗 -->
-<view class="contact_bg {{isRuleTrue02?'isRuleShow02':'isRuleHide02'}}">
+<view class="contact_bg {{isRuleTrue02?'isRuleShow02':'isRuleHide02'}}" style="display:none">
   <view class="cont_kefu detail la ">
     <view class="cont_kefu_p" style="display:none">该商户暂未提供客服联系方式</view>
     <view class="cont_kefu_body bor_b">

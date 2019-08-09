@@ -1,4 +1,5 @@
 // pages/RouteDetails/RouteDetails.js
+import api from "../../api/api.js"
 const app = getApp();
 Page({
 
@@ -23,11 +24,10 @@ Page({
     main_index: 0,
     currentIndex: 0
   },
-// 返回上一页
+  // 返回上一页
   callbacks() {
     // console.log("1"),
-    wx.navigateBack({
-    })
+    wx.navigateBack({})
   },
   // 返回首页
   backHome() {
@@ -67,9 +67,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // wx.setNavigationBarTitle({
-    //   title: ""
-    // })
+    var that = this
+    wx.request({
+      url: api.hotel_pic,
+      data: {
+        hId: 72
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        // that.setData({
+        //   imgUrls: res.data
+        // })
+      }
+    })
   },
 
   /**
